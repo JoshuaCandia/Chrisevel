@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Container from "./container";
 import { useTheme } from "next-themes";
-import heroImgLight from "../public/img/logos/small_logo_black.png";
 import heroImgDark from "../public/img/logos/small_logo_white.png";
+import heroImgLight from "../public/img/logos/small_logo_black.png";
 import EnchufandoBrand from "./EnchufandoBrand";
+
 const Hero = () => {
   const { theme } = useTheme();
+  console.log(theme);
   return (
     <>
       <Container className="flex flex-wrap ">
@@ -29,37 +31,32 @@ const Hero = () => {
               >
                 Productos
               </a>
-              <a
-                href="https://github.com/web3templates/nextly-template/"
-                target="_blank"
-                rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
-              >
-                <Image
-                  width="25"
-                  height="25"
-                  className={"object-cover"}
-                  alt="Hero Illustration"
-                  loading="eager"
-                  placeholder="blur"
-                  src={theme === "dark" ? heroImgDark : heroImgLight}
-                />
-                <span>Contactános</span>
-              </a>
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-            <Image
-              src={theme === "dark" ? heroImgDark : heroImgLight}
-              width="416"
-              height="317"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-              placeholder="blur"
-            />
+            {theme === "dark" ? (
+              <Image
+                src={heroImgDark}
+                width="416"
+                height="317"
+                className={"object-cover"}
+                alt="Hero Illustration"
+                loading="eager"
+                placeholder="blur"
+              />
+            ) : (
+              <Image
+                src={heroImgLight}
+                width="416"
+                height="317"
+                className={"object-cover"}
+                alt="Hero Illustration"
+                loading="eager"
+                placeholder="blur"
+              />
+            )}
           </div>
         </div>
       </Container>

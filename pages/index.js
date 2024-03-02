@@ -11,10 +11,8 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
-import { useTheme } from "next-themes";
 
 const Home = () => {
-  const { theme, setTheme } = useTheme();
   return (
     <>
       <Head>
@@ -26,15 +24,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        pretitle="Beneficios de Enchufando"
+        title=" Porque elegirnos"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Enchufando abre sus puertas en el año 2006, y desde entonces se ha
+        convertido en la fábrica de conexiones plásticas líder en Argentina.
+        Nuestros productos son de la más alta calidad, y nuestra gestión es
+        responsable y sostenible.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
