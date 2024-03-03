@@ -58,7 +58,6 @@ const Home = () => {
       <Faq />
       <Cta />
       <Footer />
-      <PopupWidget />
     </>
   );
 };
