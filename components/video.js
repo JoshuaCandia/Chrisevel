@@ -28,19 +28,13 @@ const Video = () => {
             </button>
           )}
           {playVideo && (
-            <video
-              autoPlay={true}
-              controls
-              width="100%"
-              height="100%"
-              className="absolute inset-0"
-            >
-              <source
-                src="https://vod-progressive.akamaized.net/exp=1709423559~acl=%2Fvimeo-transcode-storage-prod-us-central1-h264-1080p%2F01%2F4591%2F6%2F172957106%2F558393018.mp4~hmac=086fdf714e198edebdc72c3f64cf113af3615d4f610a8ee975fce4951442be86/vimeo-transcode-storage-prod-us-central1-h264-1080p/01/4591/6/172957106/558393018.mp4"
-                type="video/mp4"
-              />
-              Tu navegador no soporta el elemento de video.
-            </video>
+            <iframe
+              src="https://www.youtube.com/embed/ed5ZpIMeL_U?controls=0&autoplay=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           )}
         </div>
       </div>
