@@ -5,7 +5,7 @@ import PopupWidget from "../components/popupWidget";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme="light" attribute="class">
       <Navbar />
       <Component {...pageProps} />
       <PopupWidget />
