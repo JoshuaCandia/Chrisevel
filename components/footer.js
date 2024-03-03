@@ -4,6 +4,9 @@ import React from "react";
 import Container from "./container";
 import { useTheme } from "next-themes";
 
+import logoWhite from "../public/img/logos/small_logo_white.png";
+import logoBlack from "../public/img/logos/small_logo_black.png";
+
 export default function Footer() {
   const { theme } = useTheme();
   const navigation = [
@@ -25,11 +28,7 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src={
-                    theme === "dark"
-                      ? " /img/logos/small_logo_white.png"
-                      : "/img/logos/small_logo_black.png"
-                  }
+                  src={theme === "dark" ? logoWhite : logoBlack}
                   alt="N"
                   width="32"
                   height="32"
@@ -75,35 +74,19 @@ export default function Footer() {
           <div className="">
             <div>Seguinos en</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
-                href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
-              <a
-                //  href="https://facebook.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
-              <a
-                // href="https://instagram.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a
-                //</div>href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>
