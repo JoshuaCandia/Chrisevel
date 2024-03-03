@@ -37,25 +37,23 @@ const Home = () => {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs"
+        pretitle="Video de presentación"
+        title="Video de los comienzos de Enchufando"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        Mira nuestro video de presentación, y conoce más sobre nuestra historia.
       </SectionTitle>
       <Video />
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
+        pretitle="Testimonios"
+        title="Escucha lo que dicen nuestros clientes"
       >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        Nuestros clientes son nuestra mejor publicidad, y sus testimonios son la
+        mejor prueba de la calidad de nuestros productos y servicios.
       </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
+        Si tienes alguna duda, revisa nuestras preguntas frecuentes. Si no
+        encuentras la respuesta que buscas, no dudes en contactarnos.
       </SectionTitle>
       <Faq />
       <Cta />

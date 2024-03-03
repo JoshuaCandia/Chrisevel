@@ -24,11 +24,12 @@ const Video = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="sr-only">Play Video</span>
+              <span className="sr-only">Reproducir Video</span>
             </button>
           )}
           {playVideo && (
             <video
+              autoPlay={true}
               controls
               width="100%"
               height="100%"

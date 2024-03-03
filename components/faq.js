@@ -31,26 +31,27 @@ const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "¿Cuentan con stock de productos?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Sí, contamos con stock de todos nuestros productos, no importa cuando leas esto.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "¿Hacen envíos al interior del país?",
+    answer: "Sí, hacemos envíos a todo el país.",
+  },
+  {
+    question: "¿Cuánto tiempo demora el envío?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "El tiempo de envío depende de la distancia y del tipo de envío que elijas. Por lo general, los envíos estándar demoran entre 3 y 5 días hábiles, y los envíos express demoran entre 1 y 2 días hábiles.",
+  },
+  {
+    question: "¿Puedo hablar con un representante de ventas?",
+    answer:
+      "Sí, puedes contactarnos por teléfono o por correo electrónico, y un representante de ventas te atenderá enseguida.",
   },
 ];
 
