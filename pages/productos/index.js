@@ -21,9 +21,8 @@ export default ProductsPage;
 
 export async function getServerSideProps() {
   try {
-    /* ${process.env.URL_SERVER_PRODUCTION} */
     const response = await fetch(
-      `https://enchufando2.vercel.app//api/products`
+      `${process.env.URL_SERVER_PRODUCTION}/api/products`
     );
     const products = await response.json();
 
