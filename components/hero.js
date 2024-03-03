@@ -22,7 +22,7 @@ const Hero = () => {
               superiores en gestión responsable.
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex flex-col items-center space-y-3 sm:space-x-3 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
                 href="/productos"
                 rel="noopener"
