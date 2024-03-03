@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "./container";
 import { useTheme } from "next-themes";
 import heroImgDark from "../public/img/logos/small_logo_white.png";
@@ -7,7 +8,6 @@ import EnchufandoBrand from "./EnchufandoBrand";
 
 const Hero = () => {
   const { theme } = useTheme();
-  console.log(theme);
   return (
     <>
       <Container className="flex flex-wrap ">
@@ -23,14 +23,13 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
-                target="_blank"
+              <Link
+                href="/productos"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
               >
                 Productos
-              </a>
+              </Link>
             </div>
           </div>
         </div>
