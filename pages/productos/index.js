@@ -1,7 +1,6 @@
 import Card from "../../components/Card";
 
 const ProductsPage = ({ products }) => {
-  console.log(products[0]);
   return (
     <div className="flex flex-col justify-center items-center">
       {products[0]?.map((product) => (
