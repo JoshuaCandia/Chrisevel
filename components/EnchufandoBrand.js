@@ -12,7 +12,8 @@ export default function EnchufandoBrand() {
       alt="Hero Illustration"
       loading="eager"
       placeholder="blur"
-      style={theme === "light" && { filter: "invert(1)" }}
+      //Cambiar por filter: invert(1) para el modo oscuro
+      style={{ filter: "invert(1)" }}
     />
   );
 }
