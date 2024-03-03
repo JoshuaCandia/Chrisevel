@@ -161,7 +161,7 @@ const PopupWidget = () => {
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.name
                               ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              : "border-gray-300 focus:border-green-600 ring-green-100"
                           }`}
                         />
                         {errors.name && (
@@ -192,7 +192,7 @@ const PopupWidget = () => {
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              : "border-gray-300 focus:border-green-600 ring-green-100"
                           }`}
                         />
 
@@ -221,7 +221,7 @@ const PopupWidget = () => {
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              : "border-gray-300 focus:border-green-600 ring-green-100"
                           }`}
                           required
                         ></textarea>
@@ -334,7 +334,7 @@ const PopupWidget = () => {
                       </h3>
                       <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
-                        className="mt-6 text-indigo-600 focus:outline-none"
+                        className="mt-6 text-green-600 focus:outline-none"
                         onClick={() => reset()}
                       >
                         Volver atrás
