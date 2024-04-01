@@ -37,7 +37,7 @@ const faqdata = [
   {
     question: "¿Cuentan con stock de productos?",
     answer:
-      "Sí, contamos con stock de todos nuestros productos, no importa cuando leas esto.",
+      "Sí, contamos con stock de todos nuestros productos.",
   },
   {
     question: "¿Hacen envíos al interior del país?",
@@ -46,12 +46,12 @@ const faqdata = [
   {
     question: "¿Cuánto tiempo demora el envío?",
     answer:
-      "El tiempo de envío depende de la distancia y del tipo de envío que elijas. Por lo general, los envíos estándar demoran entre 3 y 5 días hábiles, y los envíos express demoran entre 1 y 2 días hábiles.",
+      "Los envios demoran entre 48 y 72 horas, también es posible hacer el retiro en nuestro depósito.",
   },
   {
     question: "¿Puedo hablar con un representante de ventas?",
     answer:
-      "Sí, puedes contactarnos por teléfono o por correo electrónico, y un representante de ventas te atenderá enseguida.",
+      "Sí, puedes contactarnos por teléfono o por correo electrónico, y un representante de ventas te atenderá.",
   },
 ];
 

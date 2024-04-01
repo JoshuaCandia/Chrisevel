@@ -43,14 +43,14 @@ const Home = () => {
         Mira nuestro video de presentación, y conoce más sobre nuestra historia.
       </SectionTitle>
       <Video />
-      <SectionTitle
+      {/* <SectionTitle
         pretitle="Testimonios"
         title="Escucha lo que dicen nuestros clientes"
       >
         Nuestros clientes son nuestra mejor publicidad, y sus testimonios son la
         mejor prueba de la calidad de nuestros productos y servicios.
       </SectionTitle>
-      <Testimonials />
+      <Testimonials /> */}
       <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
         Si tienes alguna duda, revisa nuestras preguntas frecuentes. Si no
         encuentras la respuesta que buscas, no dudes en contactarnos.

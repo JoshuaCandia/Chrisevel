@@ -16,18 +16,16 @@ const benefitOne = {
   image: benefitOneImg,
   bullets: [
     {
-      title: "Hacemos envíos a todo el país",
-      desc: " Contamos con un sistema de envíos a todo el país, con tiempos de entrega rápidos.",
-      icon: <TruckIcon />,
-    },
-    {
-      title: "Cada producto es revisado",
-      desc: " Cada producto es revisado antes de ser enviado a nuestros clientes.",
+      title: "Contamos con gran variedad de productos en stock",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Podes contactarnos directamente",
-      desc: "Estamos disponibles para atenderte en horarios accesibles.",
+      title: "Hacemos envíos a todo el país",
+      icon: <TruckIcon />,
+    },
+
+    {
+      title: "Podes contactarnos fácilmente",
       icon: <DevicePhoneMobileIcon />,
     },
   ],
@@ -40,18 +38,15 @@ const benefitTwo = {
   bullets: [
     {
       title: "Atención al cliente personalizada",
-      desc: "Cada cliente es importante, y por eso ofrecemos atención personalizada.",
       icon: <FaceSmileIcon />,
     },
 
     {
       title: "Productos de alta calidad",
-      desc: "Nuestros productos son de la más alta calidad.",
       icon: <SunIcon />,
     },
     {
       title: "Productos nacionales e importados",
-      desc: " Contamos con productos nacionales e importados, para satisfacer todas las necesidades.",
       icon: <FlagIcon />,
     },
   ],
