@@ -12,11 +12,10 @@ const Hero = () => {
     <>
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Enchufando
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+          <div className="max-w-2xl mb-8 md:ms-8">
+            <EnchufandoBrand />
+
+            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 ">
               Enchufando, una empresa argentina fundada en 2006, líder en
               conexiones para la conducción de agua en Argentina.
             </p>
@@ -55,27 +54,6 @@ const Hero = () => {
                 placeholder="blur"
               />
             )}
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <div className="flex flex-col justify-center">
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <EnchufandoBrand />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <EnchufandoBrand />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <EnchufandoBrand />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <EnchufandoBrand />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <EnchufandoBrand />
-            </div>
           </div>
         </div>
       </Container>
