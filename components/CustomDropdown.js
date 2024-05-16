@@ -21,6 +21,10 @@ const CustomDropdown = () => {
     { id: uuidv4(), name: "PVC", link: "/pvc" },
   ];
 
+  const handleDropdownClick = (link) => {
+    router.push(link);
+  };
+
   const handleButtonClick = () => {
     router.push("/productos");
   };
@@ -33,7 +37,7 @@ const CustomDropdown = () => {
       >
         <Button
           variant="light"
-          className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800"
+          className="inline-block text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800"
           onClick={handleButtonClick}
         >
           Productos
@@ -45,8 +49,8 @@ const CustomDropdown = () => {
         onMouseLeave={() => setIsOpen(false)}
       >
         {productsMenu.map((item) => (
-          <DropdownItem key={item.id}>
-            <Link href={item.link}>{item.name}</Link>
+          <DropdownItem onClick={() => handleDropdownClick(item.link)}>
+            {item.name}
           </DropdownItem>
         ))}
       </DropdownMenu>
