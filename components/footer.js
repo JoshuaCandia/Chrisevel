@@ -27,8 +27,8 @@ export default function Footer() {
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100"
               >
-                <Image
-                  src={theme === "dark" ? logoWhite : logoBlack}
+                <img
+                  src={theme === "dark" ? logoWhite.src : logoBlack.src}
                   alt="N"
                   width="32"
                   height="32"

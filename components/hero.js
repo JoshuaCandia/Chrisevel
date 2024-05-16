@@ -34,24 +34,22 @@ const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
             {theme === "dark" ? (
-              <Image
-                src={heroImgDark}
+              <img
+                src={heroImgDark.src}
                 width="416"
                 height="317"
-                className={"object-cover"}
+                className="object-cover"
                 alt="Hero Illustration"
                 loading="eager"
-                placeholder="blur"
               />
             ) : (
-              <Image
-                src={heroImgLight}
+              <img
+                src={heroImgLight.src}
                 width="416"
                 height="317"
-                className={"object-cover"}
+                className="object-cover"
                 alt="Hero Illustration"
                 loading="eager"
-                placeholder="blur"
               />
             )}
           </div>

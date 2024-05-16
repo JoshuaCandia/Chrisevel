@@ -1,15 +1,28 @@
 import Head from "next/head";
 import Hero from "../components/hero";
 import SectionTitle from "../components/sectionTitle";
-
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    const targetSection = localStorage.getItem("targetSection");
+    if (targetSection) {
+      const element = document.getElementById(targetSection);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 80,
+          behavior: "smooth",
+        });
+        localStorage.removeItem("targetSection");
+      }
+    }
+  }, []);
   return (
     <>
       <Head>
@@ -21,38 +34,36 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
-      <SectionTitle
-        pretitle="Beneficios de Enchufando"
-        title=" Porque elegirnos"
-      >
-        Enchufando abre sus puertas en el año 2006, y desde entonces se ha
-        convertido en la fábrica de conexiones plásticas líder en Argentina.
-        Nuestros productos son de la más alta calidad, y nuestra gestión es
-        responsable y sostenible.
-      </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
-        pretitle="Video de presentación"
-        title="Video de los comienzos de Enchufando"
-      >
+      <section id="inicio">
+        <Hero />
+      </section>
+      <section id="beneficios">
+        <SectionTitle
+          pretitle="Beneficios de Enchufando"
+          title=" Porque elegirnos"
+        >
+          Enchufando abre sus puertas en el año 2006, y desde entonces se ha
+          convertido en la fábrica de conexiones plásticas líder en Argentina.
+          Nuestros productos son de la más alta calidad, y nuestra gestión es
+          responsable y sostenible.
+        </SectionTitle>
+
+        <Benefits data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+      </section>
+      <SectionTitle pretitle="Video de presentación" title="Nuestros comienzos">
         Mira nuestro video de presentación, y conoce más sobre nuestra historia.
       </SectionTitle>
-      <Video />
-      {/* <SectionTitle
-        pretitle="Testimonios"
-        title="Escucha lo que dicen nuestros clientes"
-      >
-        Nuestros clientes son nuestra mejor publicidad, y sus testimonios son la
-        mejor prueba de la calidad de nuestros productos y servicios.
-      </SectionTitle>
-      <Testimonials /> */}
+      <section id="video">
+        <Video />
+      </section>
       <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
         Si tienes alguna duda, revisa nuestras preguntas frecuentes. Si no
         encuentras la respuesta que buscas, no dudes en contactarnos.
       </SectionTitle>
-      <Faq />
+      <section id="preguntas">
+        <Faq />
+      </section>
       <Cta />
       <Footer />
     </>

@@ -1,119 +1,186 @@
+import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { useTheme } from "next-themes";
+import { Link as ScrollLink } from "react-scroll";
 import logoLight from "../public/img/logos/small_logo_black.png";
 import logoDark from "../public/img/logos/small_logo_white.png";
+import CustomDropdown from "./CustomDropdown";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { theme } = useTheme();
+  const router = useRouter();
+  const [isHome, setIsHome] = useState(router.pathname === "/");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    setIsHome(router.pathname === "/");
+  }, [router.pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navigation = [
-    { name: "Productos", link: "/productos" },
-    { name: "Sobre Nosotros", link: "sobre_nosotros" },
-    { name: "Contacto", link: "contacto" },
+    { id: uuidv4(), name: "Beneficios", link: "beneficios" },
+    { id: uuidv4(), name: "Presentación", link: "video" },
+    { id: uuidv4(), name: "Preguntas frecuentes", link: "preguntas" },
   ];
 
-  return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo  */}
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100">
-                    <span>
-                      <Image
-                        src={theme === "dark" ? logoDark : logoLight}
-                        alt="N"
-                        width="60"
-                        height="60"
-                        className="w-12"
-                      />
-                    </span>
-                    <span></span>
-                  </span>
-                </Link>
+  const handleNavClick = (link) => {
+    if (!isHome) {
+      localStorage.setItem("targetSection", link);
+      router.push("/");
+    }
+  };
 
+  return (
+    <Disclosure>
+      {({ open }) => (
+        <div
+          className={`w-full fixed top-0 z-50 transition-colors ${
+            scrolled || open
+              ? "bg-white dark:bg-gray-900 shadow-md"
+              : "bg-transparent"
+          }`}
+        >
+          <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
+            {/* Logo */}
+            <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
+              <Link href="/">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100">
+                  <span>
+                    <img
+                      src={theme === "dark" ? logoDark.src : logoLight.src}
+                      alt="N"
+                      width="60"
+                      height="60"
+                      className="w-12"
+                    />
+                  </span>
+                  <span></span>
+                </span>
+              </Link>
+
+              <div className="xl:hidden flex items-center">
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto text-gray-500 rounded-md xl:hidden hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
-                    {open && (
+                    {open ? (
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                       />
-                    )}
-                    {!open && (
+                    ) : (
                       <path
                         fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
                       />
                     )}
                   </svg>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.link}
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                    <Link
-                      href="/"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-green-700 rounded-md lg:ml-5"
-                    >
-                      Contactános
-                    </Link>
-                  </>
-                </Disclosure.Panel>
+                <ThemeChanger className="ml-4" />
               </div>
-            </>
-          )}
-        </Disclosure>
 
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <Link
-                  href={menu.link}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800"
+              <Disclosure.Panel className="flex flex-wrap w-full my-5 xl:hidden">
+                {navigation.map((item) => (
+                  <ScrollLink
+                    key={item.id}
+                    to={item.link}
+                    smooth={true}
+                    duration={500}
+                    offset={-80} // Ajusta este valor según la altura del navbar
+                    onClick={() => handleNavClick(item.link)}
+                    className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none cursor-pointer"
+                  >
+                    {item.name}
+                  </ScrollLink>
+                ))}
+                <ScrollLink
+                  to="productos"
+                  smooth={true}
+                  duration={500}
+                  offset={-80} // Ajusta este valor según la altura del navbar
+                  onClick={() => handleNavClick("productos")}
+                  className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none cursor-pointer"
                 >
-                  {menu.name}
+                  Productos
+                </ScrollLink>
+                {/* Contactános item in mobile menu */}
+                <Link
+                  href="/contacto"
+                  className="w-full px-4 py-2 mt-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none"
+                >
+                  Contactános
                 </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+              </Disclosure.Panel>
+            </div>
 
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link
-            href="/"
-            className="px-6 py-2 text-white bg-green-700 rounded-md md:ml-5"
-          >
-            Contactános
-          </Link>
+            {/* Menu */}
+            <div className="hidden text-center xl:flex xl:items-center">
+              <ul className="items-center justify-end flex-1 pt-6 list-none xl:pt-0 xl:flex">
+                <ScrollLink
+                  onClick={() => handleNavClick("inicio")}
+                  to="inicio"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800 cursor-pointer"
+                >
+                  Inicio
+                </ScrollLink>
+                <CustomDropdown />
 
-          <ThemeChanger />
+                {navigation.map((menu) => (
+                  <li className="mr-3 nav__item" key={menu.id}>
+                    <ScrollLink
+                      to={menu.link}
+                      smooth={true}
+                      duration={500}
+                      offset={-380}
+                      onClick={() => handleNavClick(menu.link)}
+                      className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800 cursor-pointer"
+                    >
+                      {menu.name}
+                    </ScrollLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="hidden mr-3 space-x-4 xl:flex nav__item">
+              <Link
+                href="/contacto"
+                className="px-6 py-2 text-white bg-green-700 rounded-md md:ml-5"
+              >
+                Contactános
+              </Link>
+
+              <ThemeChanger />
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
+      )}
+    </Disclosure>
   );
 };
 
