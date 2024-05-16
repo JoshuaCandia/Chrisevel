@@ -2,7 +2,11 @@ import { ThemeProvider } from "next-themes";
 import "../css/tailwind.css";
 import Navbar from "../components/navbar";
 import PopupWidget from "../components/popupWidget";
-import { Providers } from "./providers";
+import { NextUIProvider } from "@nextui-org/react";
+
+export function Providers({ children }) {
+  return <NextUIProvider>{children}</NextUIProvider>;
+}
 
 function MyApp({ Component, pageProps }) {
   return (
