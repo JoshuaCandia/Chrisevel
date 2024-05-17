@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ name, category, image, sizes, type }) => {
   return (
-    <div className="md:flex border m-10 w-1/3">
+    <div className="hover:shadow-xl">
       <div className="p-2 md:flex-shrink-0">
         <img
           src={image}
@@ -11,12 +11,11 @@ const Card = ({ name, category, image, sizes, type }) => {
           alt={name}
           className="rounded-lg"
         />
-      </div>
-      <div className="mt-4">
-        <div className="uppercase text-xxl text-green-600 font-bold">
+        <div className="bg-green-400 uppercase text-xxl text-white font-bold">
           {name}
         </div>
-
+      </div>
+      <div className="mt-4">
         {/*  <p className="mt-2 text-gray-900">
           {category} - {type} - {sizes?.join(", ").toUpperCase()}
         </p> */}

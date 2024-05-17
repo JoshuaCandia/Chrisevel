@@ -1,24 +1,17 @@
-import Card from "../../components/Card";
-import { products } from "../../data/products";
+import HeaderProducts from "../../components/HeaderProducts";
 
 const ProductsPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      {products[0]?.map((product) => (
-        <Card
-          key={product.id}
-          category={product.category}
-          name={product.name}
-          image={product.image?.secure_url}
-          sizes={product.sizes}
-          type={product.type}
-        />
-      ))}
+    <div>
+      <HeaderProducts />
     </div>
   );
 };
 
 export default ProductsPage;
+
+{
+}
 
 /* export async function getServerSideProps() {
   const urlServer = process.env.NEXT_PUBLIC_URL_SERVER;

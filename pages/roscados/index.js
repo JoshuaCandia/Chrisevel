@@ -1,11 +1,25 @@
-import React from "react";
+import Card from "../../components/Card";
+import { products } from "../../data/products";
+import HeaderProducts from "../../components/HeaderProducts";
 
 const index = () => {
   return (
-    <div className="flex justify-center items-center">
-      <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-        Roscados
-      </h1>
+    <div className="flex flex-col justify-center items-center">
+      <HeaderProducts title={"ROSCADOS"} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-16 md:gap-4">
+        {products
+          ?.filter((product) => product.type === "ROSCADO")
+          .map((product) => (
+            <Card
+              key={product.id}
+              category={product.category}
+              name={product.name}
+              image={product.image?.secure_url}
+              sizes={product.sizes}
+              type={product.type}
+            />
+          ))}
+      </div>
     </div>
   );
 };

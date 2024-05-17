@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { Link as ScrollLink } from "react-scroll";
@@ -60,16 +59,13 @@ const Navbar = () => {
             <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
               <Link href="/">
                 <span className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100">
-                  <span>
-                    <img
-                      src={theme === "dark" ? logoDark.src : logoLight.src}
-                      alt="N"
-                      width="60"
-                      height="60"
-                      className="w-12"
-                    />
-                  </span>
-                  <span></span>
+                  <img
+                    src={theme === "dark" ? logoDark.src : logoLight.src}
+                    alt="N"
+                    width="60"
+                    height="60"
+                    className="w-12"
+                  />
                 </span>
               </Link>
 
