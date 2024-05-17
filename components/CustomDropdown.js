@@ -15,10 +15,11 @@ const CustomDropdown = () => {
   const router = useRouter();
 
   const productsMenu = [
-    { id: uuidv4(), name: "Roscados", link: "/roscados" },
     { id: uuidv4(), name: "Riego", link: "/riego" },
+    { id: uuidv4(), name: "Roscados", link: "/roscados" },
     { id: uuidv4(), name: "Termofusión", link: "/termofusion" },
-    { id: uuidv4(), name: "PVC", link: "/pvc" },
+    { id: uuidv4(), name: "PVC Soldable", link: "/pvc" },
+    { id: uuidv4(), name: "Válvulas y Canillas", link: "/pvc" },
   ];
 
   const handleDropdownClick = (link) => {

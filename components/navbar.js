@@ -154,7 +154,7 @@ const Navbar = () => {
                       duration={500}
                       offset={-380}
                       onClick={() => handleNavClick(menu.link)}
-                      className="inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                      className=" inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                     >
                       <span className="w-full">{menu.name}</span>
                     </ScrollLink>
