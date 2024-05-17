@@ -50,15 +50,15 @@ const Navbar = () => {
         <div
           className={`w-full fixed top-0 z-50 transition-colors ${
             scrolled || open
-              ? "bg-white dark:bg-green-900 shadow-md"
-              : "bg-transparent"
+              ? "bg-blue-800 dark:bg-blue-700 shadow-md"
+              : "bg-blue-600 dark:bg-blue-900"
           }`}
         >
           <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
             {/* Logo */}
             <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
               <Link href="/">
-                <span className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-white">
                   <img
                     src={theme === "dark" ? logoDark.src : logoLight.src}
                     alt="N"
@@ -72,7 +72,7 @@ const Navbar = () => {
               <div className="xl:hidden flex items-center">
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md xl:hidden hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto text-white rounded-md xl:hidden hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:text-white dark:focus:bg-truewhite"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -106,7 +106,7 @@ const Navbar = () => {
                     duration={500}
                     offset={-80} // Ajusta este valor según la altura del navbar
                     onClick={() => handleNavClick(item.link)}
-                    className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none cursor-pointer"
+                    className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {item.name}
                   </ScrollLink>
@@ -117,14 +117,14 @@ const Navbar = () => {
                   duration={500}
                   offset={-80} // Ajusta este valor según la altura del navbar
                   onClick={() => handleNavClick("productos")}
-                  className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none cursor-pointer"
+                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                 >
                   Productos
                 </ScrollLink>
                 {/* Contactános item in mobile menu */}
                 <Link
                   href="/contacto"
-                  className="w-full px-4 py-2 mt-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 dark:focus:bg-gray-800 focus:outline-none"
+                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none"
                 >
                   Contactános
                 </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800 cursor-pointer"
+                  className="inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                 >
                   Inicio
                 </ScrollLink>
@@ -154,7 +154,7 @@ const Navbar = () => {
                       duration={500}
                       offset={-380}
                       onClick={() => handleNavClick(menu.link)}
-                      className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800 cursor-pointer"
+                      className="inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                     >
                       <span className="w-full">{menu.name}</span>
                     </ScrollLink>
@@ -166,7 +166,7 @@ const Navbar = () => {
             <div className="hidden mr-3 space-x-4 xl:flex nav__item">
               <Link
                 href="/contacto"
-                className="px-6 py-2 text-white bg-green-700 rounded-md md:ml-5"
+                className="px-6 py-2 text-white bg-blue-700 rounded-md md:ml-5"
               >
                 Contactános
               </Link>

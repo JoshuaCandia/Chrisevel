@@ -11,7 +11,7 @@ const Card = ({ name, category, image, sizes, type }) => {
           alt={name}
           className="rounded-lg"
         />
-        <div className="bg-green-400 uppercase text-xxl text-white font-bold">
+        <div className="bg-blue-400 uppercase text-xxl text-white font-bold">
           {name}
         </div>
       </div>

@@ -37,7 +37,7 @@ const CustomDropdown = () => {
       >
         <Button
           variant="light"
-          className="inline-block text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-gray-800"
+          className="inline-block text-lg font-normal text-white no-underline rounded-md dark:text-gray-200 hover:text-bg-white/70 focus:text-bg-white/70 focus:bg-blue-100 focus:outline-none dark:focus:bg-white/70"
           onClick={handleButtonClick}
         >
           Productos

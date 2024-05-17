@@ -25,7 +25,7 @@ export default function Footer() {
               {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100"
+                className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100"
               >
                 <img
                   src={theme === "dark" ? logoWhite.src : logoBlack.src}
@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.link}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item.name}
                 </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-green-500 focus:text-green-500 focus:bg-green-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item}
                 </Link>

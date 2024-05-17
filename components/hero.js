@@ -24,14 +24,14 @@ const Hero = () => {
               <Link
                 href="/productos"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-green-700 rounded-md "
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-blue-700 rounded-md "
               >
                 Productos
               </Link>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="flex items-center justify-end w-full lg:w-1/2">
           <div className="">
             {theme === "dark" ? (
               <img

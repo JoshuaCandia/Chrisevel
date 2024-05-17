@@ -6,9 +6,9 @@ const HeaderProducts = ({ title }) => {
   return (
     <div
       style={{}}
-      className="bg-green-500 md:pl-32 xl:pl-48 2xl:pl-64 min-h-96 min-w-full flex justify-center md:justify-start items-center"
+      className="bg-blue-500 md:pl-32 xl:pl-48 2xl:pl-64 min-h-96 min-w-full flex justify-center md:justify-start items-center"
     >
-      <span className="flex items-center space-x-2 text-2xl font-medium text-green-500 dark:text-gray-100">
+      <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
         <img
           src={theme === "dark" ? logoDark.src : logoLight.src}
           alt="N"
