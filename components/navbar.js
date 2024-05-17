@@ -51,7 +51,7 @@ const Navbar = () => {
         <div
           className={`w-full fixed top-0 z-50 transition-colors ${
             scrolled || open
-              ? "bg-white dark:bg-gray-900 shadow-md"
+              ? "bg-white dark:bg-green-900 shadow-md"
               : "bg-transparent"
           }`}
         >

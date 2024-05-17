@@ -1,6 +1,7 @@
 import Card from "../../components/Card";
+import { products } from "../../data/products";
 
-const ProductsPage = ({ products }) => {
+const ProductsPage = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       {products[0]?.map((product) => (
@@ -19,7 +20,7 @@ const ProductsPage = ({ products }) => {
 
 export default ProductsPage;
 
-export async function getServerSideProps() {
+/* export async function getServerSideProps() {
   const urlServer = process.env.NEXT_PUBLIC_URL_SERVER;
   const urlServerProduction = process.env.NEXT_PUBLIC_URL_SERVER_PRODUCTION;
 
@@ -39,4 +40,4 @@ export async function getServerSideProps() {
       props: {},
     };
   }
-}
+} */
