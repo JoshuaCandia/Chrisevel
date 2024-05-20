@@ -19,7 +19,7 @@ const CustomDropdown = () => {
     { id: uuidv4(), name: "Roscados", link: "/roscados" },
     { id: uuidv4(), name: "Termofusión", link: "/termofusion" },
     { id: uuidv4(), name: "PVC Soldable", link: "/pvc" },
-    { id: uuidv4(), name: "Válvulas y Canillas", link: "/pvc" },
+    { id: uuidv4(), name: "Válvulas y Canillas", link: "/valvulas-y-canillas" },
   ];
 
   const handleDropdownClick = (link) => {

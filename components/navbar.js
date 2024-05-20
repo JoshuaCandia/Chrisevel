@@ -166,7 +166,7 @@ const Navbar = () => {
             <div className="hidden mr-3 space-x-4 xl:flex nav__item">
               <Link
                 href="/contacto"
-                className="px-6 py-2 text-white bg-blue-700 rounded-md md:ml-5"
+                className="font-sans px-6 py-2 text-white bg-blue-700 rounded-md md:ml-5"
               >
                 Contactános
               </Link>

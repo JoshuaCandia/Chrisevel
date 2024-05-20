@@ -5,10 +5,10 @@ import HeaderProducts from "../../components/HeaderProducts";
 const index = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <HeaderProducts title={"TERMOFUSIÓN"} />
+      <HeaderProducts title={"VALVULAS Y CANILLAS"} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-16 md:gap-4">
         {products
-          ?.filter((product) => product.type === product.type)
+          ?.filter((product) => product.type === "KRONA")
           .map((product) => (
             <Card
               key={product.id}
