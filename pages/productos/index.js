@@ -1,36 +1,60 @@
 import HeaderProducts from "../../components/HeaderProducts";
-
+import logoDark from "../../public/img/logos/small_logo_white.png";
+import { setImage } from "../../utils/functions";
+import Footer from "../../components/footer.js";
+import Link from "next/link";
 const ProductsPage = () => {
   return (
     <div>
-      <HeaderProducts />
+      <HeaderProducts title="Productos" type="products" />
+      <section className="flex justify-center mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 md:px-16 md:gap-4">
+          <CardSectionProduct link="/riego" title="Riego" type="riego" />
+          <CardSectionProduct
+            link="/roscados"
+            title="Roscados"
+            type="roscados"
+          />
+          <CardSectionProduct
+            link="/termofusion"
+            title="Termofusión"
+            type="termofusion"
+          />
+          <CardSectionProduct link="/pvc" title="PVC Soldable" type="pvc" />
+          <CardSectionProduct
+            link="/valvulas-y-canillas"
+            title="Válvulas "
+            type="valvulas"
+          />
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };
 
 export default ProductsPage;
 
-{
-}
-
-/* export async function getServerSideProps() {
-  const urlServer = process.env.NEXT_PUBLIC_URL_SERVER;
-  const urlServerProduction = process.env.NEXT_PUBLIC_URL_SERVER_PRODUCTION;
-
-  try {
-    const response = await fetch(`${urlServer}/api/products`);
-    const products = await response.json();
-
-    return {
-      props: {
-        products,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-
-    return {
-      props: {},
-    };
-  }
-} */
+const CardSectionProduct = ({ title, type, link }) => {
+  return (
+    <Link href={link}>
+      <article
+        style={{
+          backgroundImage: setImage(type),
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="hover:cursor-pointer d-flex py-20 w-80 bg-green-500 ps-8"
+      >
+        <article className="bg-black flex justify-start items-center ">
+          <span className=" flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
+            <img src={logoDark.src} width="70" height="70" className="w-10" />
+          </span>
+          <h1 className=" text-2xl text-white text-center font-bold uppercase">
+            {title}
+          </h1>
+        </article>
+      </article>
+    </Link>
+  );
+};

@@ -12,7 +12,7 @@ const Hero = () => {
     <>
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 md:ms-8">
+          <div className="mt-4 mt:lg:0 max-w-2xl mb-8 md:ms-8">
             <EnchufandoBrand />
 
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 ">
@@ -31,8 +31,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end w-full lg:w-1/2">
-          <div className="">
+        <div className="flex items-center justify-center lg:justify-end w-full lg:w-1/2">
+          <div className="flex justify-center lg:justify-end w-8/12 md:w-10/12 lg:w-full">
             {theme === "dark" ? (
               <img
                 src={heroImgDark.src}

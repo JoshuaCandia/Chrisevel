@@ -15,7 +15,7 @@ export default function Footer() {
     { name: "Contacto", link: "contacto" },
   ];
 
-  const legal = ["Terms", "Privacy", "Legal"];
+  const legal = ["Términos", "Privacidad", "Legal"];
   return (
     <div className="relative">
       <Container>
@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            {/* <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link
                   key={index}
@@ -69,7 +69,7 @@ export default function Footer() {
                   {item}
                 </Link>
               ))}
-            </div> */}
+            </div>
           </div>
           <div className="">
             <div>Seguinos en</div>
