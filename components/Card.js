@@ -34,7 +34,7 @@ const Card = ({ name, category, image, sizes, type }) => {
           <table className="table-auto w-full">
             <thead>
               <tr>
-                <th className="px-4 py-2">Size</th>
+                <th className="px-4 py-2">Tabla de tamaños</th>
               </tr>
             </thead>
             <tbody>
