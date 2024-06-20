@@ -10,7 +10,7 @@ const HeaderProducts = ({ title, type }) => {
       }}
       className="bg-blue-500 md:pl-32 xl:pl-48 2xl:pl-64 min-h-96 min-w-full flex justify-center md:justify-start items-center"
     >
-      <article className=" bg-black w-full flex justify-center md:justify-start items-center">
+      <article className=" bg-blue-500 w-full flex justify-center md:justify-start items-center">
         <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
           <img
             src={logoDark.src}
