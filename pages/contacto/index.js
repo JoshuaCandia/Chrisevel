@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer";
 
 const index = () => {
   return (
@@ -189,6 +190,7 @@ const index = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
