@@ -4,4 +4,9 @@ module.exports = {
     defaultLocale: "en",
   },
   output: "standalone",
+  images: {
+    domains: ["https://res.cloudinary.com"], 
+    disableStaticImages: true,
+    unoptimized: true,
+  },
 };
