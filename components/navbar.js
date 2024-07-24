@@ -49,8 +49,8 @@ const Navbar = () => {
         <div
           className={`w-full fixed top-0 z-50 transition-colors ${
             scrolled || open
-              ? "bg-blue-800 dark:bg-blue-700 shadow-md"
-              : "bg-blue-600 dark:bg-blue-900"
+              ? "bg-gray-800 dark:bg-gray-700 shadow-md"
+              : "bg-gray-600 dark:bg-gray-900"
           }`}
         >
           <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
