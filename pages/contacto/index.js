@@ -18,7 +18,7 @@ const index = () => {
         <div class="flex items-stretch justify-center">
           <div class="grid md:grid-cols-2">
             <div class="h-full pr-6">
-              <p class="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
+              <p class="text-base font-semibold uppercase tracking-wide text-text-blue-600 dark:text-blue-200">
                 Enchufando
               </p>
               <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">

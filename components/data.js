@@ -7,13 +7,11 @@ import {
   FlagIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../public/img/galpon1.jpeg";
-import benefitTwoImg from "../public/img/galpon2.jpeg";
-
 const benefitOne = {
   title: "Contamos con stock permanente",
   desc: "Podemos proveer a nuestros clientes con stock permanente de productos de alta calidad.",
-  image: benefitOneImg,
+  image:
+    "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169931/galpon/aege7z38vdijhw42brlz.jpg",
   bullets: [
     {
       title: "Contamos con gran variedad de productos en stock",
@@ -34,7 +32,8 @@ const benefitOne = {
 const benefitTwo = {
   title: "Beneficios de trabajar con nosotros",
   desc: "",
-  image: benefitTwoImg,
+  image:
+    "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169933/galpon/bygkuaqltj3xnjzkbdrg.jpg",
   bullets: [
     {
       title: "Atención al cliente personalizada",

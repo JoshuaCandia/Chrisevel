@@ -1,5 +1,4 @@
 import HeaderProducts from "../../components/HeaderProducts";
-import logoDark from "../../public/img/logos/small_logo_white.png";
 import { setImage } from "../../utils/functions";
 import Footer from "../../components/footer.js";
 import Link from "next/link";
@@ -48,7 +47,12 @@ const CardSectionProduct = ({ title, type, link }) => {
       >
         <article className="bg-black flex justify-start items-center ">
           <span className=" flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
-            <img src={logoDark.src} width="70" height="70" className="w-10" />
+            <img
+              src="../https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169390/logos/t4htuseubqg4qrqcjpcr.png"
+              width="70"
+              height="70"
+              className="w-10"
+            />
           </span>
           <h1 className=" text-2xl text-white text-center font-bold uppercase">
             {title}

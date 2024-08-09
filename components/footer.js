@@ -1,11 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 import { useTheme } from "next-themes";
-
-import logoWhite from "../public/img/logos/small_logo_white.png";
-import logoBlack from "../public/img/logos/small_logo_black.png";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -28,7 +24,11 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100"
               >
                 <img
-                  src={theme === "dark" ? logoWhite.src : logoBlack.src}
+                  src={
+                    theme === "dark"
+                      ? "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169390/logos/t4htuseubqg4qrqcjpcr.png"
+                      : "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169724/logos/fyuranu83qla1d6hlv5z.png"
+                  }
                   alt="N"
                   width="32"
                   height="32"

@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "./container";
 import { useTheme } from "next-themes";
-import heroImgDark from "../public/img/logos/small_logo_white.png";
-import heroImgLight from "../public/img/logos/small_logo_black.png";
+
 import EnchufandoBrand from "./EnchufandoBrand";
 
 const Hero = () => {
@@ -35,7 +34,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end w-8/12 md:w-10/12 lg:w-full">
             {theme === "dark" ? (
               <img
-                src={heroImgDark.src}
+                src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169725/logos/ksoswjkido8k6utacxtp.png"
                 width="416"
                 height="317"
                 className="object-cover"
@@ -44,7 +43,7 @@ const Hero = () => {
               />
             ) : (
               <img
-                src={heroImgLight.src}
+                src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169724/logos/fyuranu83qla1d6hlv5z.png"
                 width="416"
                 height="317"
                 className="object-cover"

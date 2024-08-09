@@ -14,7 +14,7 @@ const Benefits = (props) => {
         >
           <div>
             <img
-              src={data.image.src}
+              src={data.image}
               alt="N"
               width="351"
               height="auto"

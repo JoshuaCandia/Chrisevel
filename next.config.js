@@ -5,8 +5,11 @@ module.exports = {
   },
   output: "standalone",
   images: {
-    domains: ["https://res.cloudinary.com"], 
+    domains: ["https://res.cloudinary.com"],
     disableStaticImages: true,
     unoptimized: true,
   },
 };
+
+const withImages = require("next-images");
+module.exports = withImages();

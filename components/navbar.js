@@ -4,7 +4,6 @@ import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { Link as ScrollLink } from "react-scroll";
-import logoDark from "../public/img/logos/small_logo_white.png";
 import CustomDropdown from "./CustomDropdown";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -46,30 +45,24 @@ const Navbar = () => {
   return (
     <Disclosure>
       {({ open }) => (
-        <div
-          className={`w-full fixed top-0 z-50 transition-colors ${
-            scrolled || open
-              ? "bg-gray-800 dark:bg-gray-700 shadow-md"
-              : "bg-gray-600 dark:bg-gray-900"
-          }`}
-        >
+        <div className="w-full fixed top-0 z-50 transition-colors bg-black">
           <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
             {/* Logo */}
             <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
               <Link href="/">
                 <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-white">
                   <img
-                    src={logoDark.src}
+                    src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169390/logos/t4htuseubqg4qrqcjpcr.png"
                     alt="N"
-                    width="60"
-                    height="60"
-                    className="w-12"
+                    width="100"
+                    height="100"
+                    className="w-36"
                   />
                 </span>
               </Link>
 
               <div className="xl:hidden flex items-center">
-                <ThemeChanger className="mr-4" />
+                {/*   <ThemeChanger className="mr-4" /> */}
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-white rounded-md xl:hidden :text-black focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:text-white dark:focus:bg-trueGray-5hover0"
@@ -162,7 +155,7 @@ const Navbar = () => {
             </div>
 
             <div className="hidden mr-3 space-x-4 xl:flex nav__item">
-              <ThemeChanger className="" />
+              {/*  <ThemeChanger className="" /> */}
 
               <Link
                 href="/contacto"
