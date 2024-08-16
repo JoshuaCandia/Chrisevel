@@ -2,17 +2,17 @@ import Card from "../../components/Card";
 import { products } from "../../data/products";
 import HeaderProducts from "../../components/HeaderProducts";
 import Footer from "../../components/footer";
+import TitleProduct from "../../components/TitleProduct";
+
 const index = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <HeaderProducts title={"ROSCADOS"} type="roscados" />
       <section>
-        <h2 className="md:px-16 text-2xl font-bold text-blue-600 text-start mt-8 mb-4">
-          Todos los productos roscados
-        </h2>
+        <TitleProduct title="ROSCADOS" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-16 md:gap-4">
           {products
-            ?.filter((product) => product.type === "ROSCADO")
+            ?.filter((product) => product.category === "ROSCA")
             .map((product) => (
               <Card
                 key={product.id}

@@ -2,7 +2,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Codo HH a 90º",
-    category: "Codo",
+    category: "ROSCA",
     image: {
       public_id: "products/w5wklevdee8oligrtv5n",
       secure_url:
@@ -13,7 +13,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Codo MH a 90º",
-    category: "Codo",
+    category: "ROSCA",
     image: {
       public_id: "products/l6ei8kus0zkzgvj4l4m1",
       secure_url:
@@ -24,7 +24,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Codo HH a 45º",
-    category: "Codo",
+    category: "ROSCA",
     image: {
       public_id: "products/oupjboripihspf85i5j0",
       secure_url:
@@ -35,7 +35,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Tee",
-    category: "Tee",
+    category: "ROSCA",
     image: {
       public_id: "products/jiaqm0s0n5mpfiign1on",
       secure_url:
@@ -46,7 +46,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Unión doble",
-    category: "Unión",
+    category: "ROSCA",
     image: {
       public_id: "products/pgvrzqskhufm68ibz77n",
       secure_url:
@@ -57,7 +57,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Cupla HH",
-    category: "Cupla",
+    category: "ROSCA",
     image: {
       public_id: "products/l3ijafqsq6i34a8pztwo",
       secure_url:
@@ -68,7 +68,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Cupla MH",
-    category: "Cupla",
+    category: "ROSCA",
     image: {
       public_id: "products/okpitn78g1qk2uyosg80",
       secure_url:
@@ -79,7 +79,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Curva HH",
-    category: "Curva",
+    category: "ROSCA",
     image: {
       public_id: "products/xypitfex7xgmew867byu",
       secure_url:
@@ -90,7 +90,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Curva MH",
-    category: "Curva",
+    category: "ROSCA",
     image: {
       public_id: "products/vgqwxzmn3hzaa9uq5z07",
       secure_url:
@@ -101,7 +101,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Rosca con tuerca",
-    category: "Rosca con tuerca",
+    category: "ROSCA",
     image: {
       public_id: "products/b3opwwarfk71trypeonl",
       secure_url:
@@ -112,7 +112,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Tapón",
-    category: "Tapón",
+    category: "ROSCA",
     image: {
       public_id: "products/hghuefqmvsict7vt4eha",
       secure_url:
@@ -123,7 +123,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Tapa",
-    category: "Tapa",
+    category: "ROSCA",
     image: {
       public_id: "products/yypmfyvufoguwas6isqv",
       secure_url:
@@ -134,7 +134,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Curva Sobre Paso",
-    category: "Curva",
+    category: "ROSCA",
     image: {
       public_id: "products/khshguwzpke5vpavrvhc",
       secure_url:
@@ -145,7 +145,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Adaptador tanque",
-    category: "Adaptador",
+    category: "ROSCA",
     image: {
       public_id: "products/kthudaopnlxib03nwu00",
       secure_url:
@@ -156,7 +156,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Brida",
-    category: "Brida",
+    category: "ROSCA",
     image: {
       public_id: "products/qpqxyk1tgznolbklsoj4",
       secure_url:
@@ -167,7 +167,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Junta PVC",
-    category: "Junta",
+    category: "ROSCA",
     image: {
       public_id: "products/c7l2ar8csvxxeuifsc1s",
       secure_url:
@@ -178,7 +178,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Acople Standard Largo",
-    category: "Acople",
+    category: "ROSCA",
     image: {
       public_id: "products/tobug0ziy5iasqcnbdfe",
       secure_url:
@@ -189,7 +189,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Acople Standard Gris",
-    category: "Acople",
+    category: "ROSCA",
     image: {
       public_id: "products/oojuiwi2ttpu9fxc2ipn",
       secure_url:
@@ -200,7 +200,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Acople profesional",
-    category: "Acople",
+    category: "ROSCA",
     image: {
       public_id: "products/lb1nl70fsnslzqzb2t7e",
       secure_url:
@@ -211,7 +211,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Cruz",
-    category: "Cruz",
+    category: "ROSCA",
     image: {
       public_id: "products/halnptl24igfygq1nzh3",
       secure_url:
@@ -222,7 +222,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Codo HH 90º Red.",
-    category: "Codo",
+    category: "ROSCA",
     image: {
       public_id: "products/e4jwdap4xojietqdiyjh",
       secure_url:
@@ -233,7 +233,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Cupla HH Red.",
-    category: "Cupla",
+    category: "ROSCA",
     image: {
       public_id: "products/jvrrbfftumzwsfu96yhb",
       secure_url:
@@ -244,7 +244,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Tee red.",
-    category: "Tee",
+    category: "ROSCA",
     image: {
       public_id: "products/wjb10oexd0phy3kmi3z9",
       secure_url:
@@ -255,7 +255,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Rosca con tuerca red.",
-    category: "Rosca con tuerca",
+    category: "ROSCA",
     image: {
       public_id: "products/djomsk3a7lxhgvmmzywd",
       secure_url:
@@ -266,7 +266,7 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Buje",
-    category: "Buje",
+    category: "ROSCA",
     image: {
       public_id: "products/yjnaaea3kqqcth5odoe3",
       secure_url:
@@ -309,84 +309,48 @@ export const products = [
   {
     type: "ROSCADO",
     name: "Niple x 6cm",
-    category: "Niple",
+    category: "ROSCA",
     image: {
       public_id: "products/vkw23fba0dyacxw7ww0h",
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/vkw23fba0dyacxw7ww0h.jpg",
     },
-    sizes: ["1/2”", "3/4”", "1”"],
+    sizes: [
+      "1/2 X 5",
+      "1/2 X 8",
+      "1/2 X 10",
+      "1/2 X 12",
+      "1/2 X 15",
+      "1/2 X 20",
+      "1 X 6",
+      "1 X 8",
+      "1 X 6",
+      "1 X 10",
+      "1 X 12",
+      "1 X 15",
+      "1 X 20",
+      "1 1/4 X 10",
+      "1 1/4 X 12",
+      "1 1/4 X 15",
+      "1 1/4 X 20",
+      "1 1/2 X 10",
+      "1 1/2 X 12",
+      "1 1/2 X 15",
+      "1 1/2 X 20",
+      "2 X 10",
+      "2 X 12",
+      "2 X 15",
+      "2 X 20",
+      "1/2 X 25",
+      "3/4 X 25",
+      "1 X 25",
+    ],
   },
-  {
-    type: "ROSCADO",
-    name: "Niple x 8cm",
-    category: "Niple",
-    image: {
-      public_id: "products/vxio5hpsmhky8tojfs9k",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/vxio5hpsmhky8tojfs9k.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”"],
-  },
-  {
-    type: "ROSCADO",
-    name: "Niple x 10cm",
-    category: "Niple",
-    image: {
-      public_id: "products/vxio5hpsmhky8tojfs9k",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/vxio5hpsmhky8tojfs9k.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
-  },
-  {
-    type: "ROSCADO",
-    name: "Niple x 12cm",
-    category: "Niple",
-    image: {
-      public_id: "products/d7wnl1butg98qq9drqio",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/d7wnl1butg98qq9drqio.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
-  },
-  {
-    type: "ROSCADO",
-    name: "Niple x 15cm",
-    category: "Niple",
-    image: {
-      public_id: "products/d7wnl1butg98qq9drqio",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/d7wnl1butg98qq9drqio.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
-  },
-  {
-    type: "ROSCADO",
-    name: "Niple x 20cm",
-    category: "Niple",
-    image: {
-      public_id: "products/t2cch8ccp0hyrq4yz3dk",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/t2cch8ccp0hyrq4yz3dk.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
-  },
-  {
-    type: "ROSCADO",
-    name: "Niple x 25cm",
-    category: "Niple",
-    image: {
-      public_id: "products/faneko6qdmtjmj6ppgjg",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/faneko6qdmtjmj6ppgjg.jpg",
-    },
-    sizes: ["1/2”", "3/4”", "1”"],
-  },
+
   {
     type: "ROSCADO",
     name: "Flexible gris",
-    category: "Flexible",
+    category: "ROSCA",
     image: {
       public_id: "products/fvjeetxoh6k2zcbwdgii",
       secure_url:
@@ -397,7 +361,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Enchufe doble",
-    category: "Enchufe",
+    category: "RIEGO",
     image: {
       public_id: "products/s0zjkgs3a300u9reou97",
       secure_url:
@@ -408,7 +372,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Enchufe rosca macho",
-    category: "Enchufe",
+    category: "RIEGO",
     image: {
       public_id: "products/ryqbjozk6l0kkcxzwxdh",
       secure_url:
@@ -419,7 +383,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Enchufe rosca hembra",
-    category: "Enchufe",
+    category: "RIEGO",
     image: {
       public_id: "products/xmsshj8g8pjazrnxcirb",
       secure_url:
@@ -430,7 +394,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Codo enchufe doble",
-    category: "Codo",
+    category: "RIEGO",
     image: {
       public_id: "products/fyqgajz2emphmyib8zmh",
       secure_url:
@@ -438,10 +402,22 @@ export const products = [
     },
     sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
   },
+
+  {
+    type: "ESPIGA",
+    name: "Codo rosca macho reducción",
+    category: "RIEGO",
+    image: {
+      public_id: "products/ryqbjozk6l0kkcxzwxdh",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/ryqbjozk6l0kkcxzwxdh.jpg",
+    },
+    sizes: ["3/4 X 1/2", "1 X 3/4", "1 X 1/2"],
+  },
   {
     type: "ESPIGA",
     name: "Codo enchufe rosca hembra",
-    category: "Codo",
+    category: "RIEGO",
     image: {
       public_id: "products/sn2w19cc1tak9jywsm6p",
       secure_url:
@@ -452,7 +428,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Codo enchufe rosca macho",
-    category: "Codo",
+    category: "RIEGO",
     image: {
       public_id: "products/itlg93dpwp1hnax1pkmf",
       secure_url:
@@ -463,7 +439,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Enchufe doble red",
-    category: "Enchufe",
+    category: "RIEGO",
     image: {
       public_id: "products/vx1erpcn2ruvm1ggjnj5",
       secure_url:
@@ -474,7 +450,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Tee triple",
-    category: "Tee",
+    category: "RIEGO",
     image: {
       public_id: "products/hbb8xjxd1wzfbqcpfgnv",
       secure_url:
@@ -485,7 +461,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Tee rosca hembra",
-    category: "Tee",
+    category: "RIEGO",
     image: {
       public_id: "products/cxv5idh0w1dh47egd2ln",
       secure_url:
@@ -496,7 +472,7 @@ export const products = [
   {
     type: "ESPIGA",
     name: "Enchufe rosca macho red",
-    category: "Enchufe",
+    category: "RIEGO",
     image: {
       public_id: "products/ryqbjozk6l0kkcxzwxdh",
       secure_url:
@@ -506,37 +482,19 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Val. Esférica",
-    category: "Valvula",
+    name: "Valvula a esfera, rosca HH",
+    category: "VALVULA",
     image: {
       public_id: "products/rgvszl9tpfu7f47ulhzo",
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/rgvszl9tpfu7f47ulhzo.jpg",
     },
-    sizes: [
-      "1/2”",
-
-      "3/4”",
-
-      "1”",
-
-      "1 1/4”",
-
-      "1 1/2”",
-
-      "2”",
-
-      "2 1/2”",
-
-      "3”",
-
-      "4”",
-    ],
+    sizes: ["1/2", "3/4", "1", "1 X 1/4", "1 X 1/2", "2", "2 X 1/2", "3", "4"],
   },
   {
     type: "KRONA",
-    name: "Val. Retención c/canasto",
-    category: "Valvula",
+    name: "Valvula de retención c/canasto",
+    category: "VALVULA",
     image: {
       public_id: "products/dy2cdxxkurlorxroyft6",
       secure_url:
@@ -547,7 +505,7 @@ export const products = [
   {
     type: "KRONA",
     name: "Val. Antirretorno con adap.",
-    category: "Valvula",
+    category: "VALVULA",
     image: {
       public_id: "products/xks1rc8txdg2xfdwp5pv",
       secure_url:
@@ -557,8 +515,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Canilla Jardín",
-    category: "Canilla",
+    name: "Canilla plástica Jardín",
+    category: "VALVULA",
     image: {
       public_id: "products/ohs9mvbvnh0w8sisc5m6",
       secure_url:
@@ -568,8 +526,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Val. Esférica Media Union",
-    category: "Valvula",
+    name: "Válvulas a esfera con media unión",
+    category: "VALVULA",
     image: {
       public_id: "products/dktxjwggvbwjsytkjemw",
       secure_url:
@@ -578,9 +536,9 @@ export const products = [
     sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”", "40 MM", "50 MM"],
   },
   {
-    type: "KRONA",
-    name: "Adaptador Soldable Rosca Macho",
-    category: "Adaptador",
+    type: "RIEGO",
+    name: "Adaptador soldable rosca macho",
+    category: "PVC",
     image: {
       public_id: "products/wu6k8pchsz1qll47vbhv",
       secure_url:
@@ -591,7 +549,7 @@ export const products = [
   {
     type: "KRONA",
     name: "Buje Corto soldable",
-    category: "Buje",
+    category: "PVC",
     image: {
       public_id: "products/bbfqg58jgjvcqvhek2fo",
       secure_url:
@@ -602,7 +560,7 @@ export const products = [
   {
     type: "KRONA",
     name: "Curva soldable a 90°",
-    category: "Curva",
+    category: "PVC",
     image: {
       public_id: "products/wkicciarpa4jyo8hla7v",
       secure_url:
@@ -612,8 +570,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Codo Soldable a 45°",
-    category: "Codo",
+    name: "Codo soldable a 45°",
+    category: "PVC",
     image: {
       public_id: "products/xd3ufqkifl9ly4zdvasb",
       secure_url:
@@ -623,8 +581,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Codo Soldable a 90°",
-    category: "Codo",
+    name: "Codo soldable a 90°",
+    category: "PVC",
     image: {
       public_id: "products/xulgxrjh08f5vbdr4nvv",
       secure_url:
@@ -634,8 +592,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Cupla Soldable",
-    category: "Cupla",
+    name: "Cupla soldable",
+    category: "PVC",
     image: {
       public_id: "products/topgqeidfvbj2w7hbwj7",
       secure_url:
@@ -645,8 +603,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Tee Soldable",
-    category: "Tee",
+    name: "Tee soldable",
+    category: "PVC",
     image: {
       public_id: "products/jtpm4ucberabr9o80wku",
       secure_url:
@@ -656,8 +614,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Unión Doble Soldable",
-    category: "Unión",
+    name: "Unión doble soldable",
+    category: "PVC",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url:
@@ -667,8 +625,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Codo a 90° Rosca Hembra Soldable",
-    category: "Codo",
+    name: "Codo a 90° rosca hembra soldable",
+    category: "PVC",
     image: {
       public_id: "products/doxwzipphszkl2iq79ul",
       secure_url:
@@ -678,8 +636,8 @@ export const products = [
   },
   {
     type: "KRONA",
-    name: "Adaptador Soldable Rosca Hembra",
-    category: "Adaptador",
+    name: "Adaptador soldable rosca hembra",
+    category: "PVC",
     image: {
       public_id: "products/fijvppuk3wl1uc2inzru",
       secure_url:
@@ -702,7 +660,7 @@ export const products = [
   {
     type: "KRONA",
     name: "Montura",
-    category: "Montura",
+    category: "PVC",
     image: {
       public_id: "products/aqmk8yvlamscff0nnwdn",
       secure_url:
