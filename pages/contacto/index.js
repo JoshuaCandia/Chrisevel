@@ -11,7 +11,7 @@ const index = () => {
               Contacto
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
-              ¿Tienes alguna pregunta o comentario? , no dudes en contactarnos
+              ¿Tienes alguna pregunta o comentario? no dudes en contactarnos
             </p>
           </div>
         </div>
