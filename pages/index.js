@@ -1,13 +1,13 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import Benefits from "../components/benefits";
+import Cta from "../components/cta";
+import { benefitOne, benefitTwo } from "../components/data";
+import Faq from "../components/faq";
+import Footer from "../components/footer";
 import Hero from "../components/hero";
 import SectionTitle from "../components/sectionTitle";
-import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
-import Benefits from "../components/benefits";
-import Footer from "../components/footer";
-import Cta from "../components/cta";
-import Faq from "../components/faq";
-import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
@@ -52,7 +52,7 @@ const Home = () => {
         <Benefits imgPos="right" data={benefitTwo} />
       </section>
       <SectionTitle pretitle="Video de presentación" title="Nuestros comienzos">
-        Mira nuestro video de presentación, y conoce más sobre nuestra historia.
+        Mira nuestro video de presentación y conoce más sobre nuestra historia.
       </SectionTitle>
       <section id="video">
         <Video />

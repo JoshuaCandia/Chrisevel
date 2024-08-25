@@ -668,4 +668,202 @@ export const products = [
     },
     sizes: ["50 x 1/2”", "50 x 3/4”"],
   },
+  {
+    type: "FUSION",
+    name: "Codo a 90°",
+    category: "FUSION",
+    image: {
+      public_id: "products/iszkrze3jegj12wde6ax",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/iszkrze3jegj12wde6ax.jpg",
+    },
+    sizes: ["20MM", "25MM", "32MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Tee",
+    category: "FUSION",
+    image: {
+      public_id: "products/jiaqm0s0n5mpfiign1on",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/jtpm4ucberabr9o80wku.jpg",
+    },
+    sizes: ["20MM", "25MM", "32MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Cupla",
+    category: "FUSION",
+    image: {
+      public_id: "products/bbfqg58jgjvcqvhek2fo",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/bbfqg58jgjvcqvhek2fo.jpg",
+    },
+    sizes: ["20MM", "25MM", "32MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Tapa",
+    category: "FUSION",
+    image: {
+      public_id: "products/jiaqm0s0n5mpfiign1on",
+      secure_url:
+        "https://acdn.mitiendanube.com/stores/001/230/396/products/1-tapa-e05b0b953b4e07ced517131430510330-640-0.jpg",
+    },
+    sizes: ["20MM", "25MM", "32MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Unión doble",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
+    },
+    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Buje reducción",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169120/latest-products/IMAGENES_CORTADAS/ln7u6lo0fppxh2coylp5.png",
+    },
+    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Curva a 90°",
+    category: "FUSION",
+    image: {
+      public_id: "products/iszkrze3jegj12wde6ax",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/aygadnssxfw3cvxpogbg.png",
+    },
+    sizes: ["20MM", "25MM", "32MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Adaptador tanque",
+    category: "FUSION",
+    image: {
+      public_id: "products/iszkrze3jegj12wde6ax",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/ajlbf6jnziasbckk7oex.png",
+    },
+    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+  },
+  {
+    type: "FUSION",
+    name: "Unión doble con rosca plástica",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
+    },
+    sizes: [
+      "20 x 1/2”",
+      "25 3/4”",
+      "32 x 1”",
+      "40 x 11/4”",
+      "50MM x 11/”",
+      "63 x 2”",
+    ],
+  },
+  {
+    type: "FUSION",
+    name: "Cupla rosca-fusión",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/ke5uvg6cq9nbdmoonml2.png",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”"],
+  },
+  {
+    type: "FUSION",
+    name: "Codo rosca-fusión",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/qlkm5f4bka3tymy2jvr6.png",
+    },
+    sizes: ["20 x 1/2”"],
+  },
+  {
+    type: "FUSION",
+    name: "Codo inserción hembra",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Codo inserción macho",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Cupla inserción hembra",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Cupla inserción macho",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Tee inserción macho",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Tee inserción macho",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
+  },
+  {
+    type: "FUSION",
+    name: "Llave de paso (BCE)",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url: "sin-foto",
+    },
+    sizes: ["20MM”", "25MM"],
+  },
 ];

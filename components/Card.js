@@ -23,9 +23,9 @@ const Card = ({ name, category, image, sizes, type }) => {
           width="248"
           height="248"
           alt={name}
-          className="rounded-lg"
+          className="rounded-lg max-w-[248px] max-h-[248px] object-fill "
         />
-        <div className="bg-blue-400 uppercase text-xxl text-white font-bold">
+        <div className="bg-blue-400 text-center uppercase text-xxl text-white font-bold">
           {name}
         </div>
       </div>

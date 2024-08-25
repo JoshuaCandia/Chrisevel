@@ -1,7 +1,7 @@
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import React from "react";
 import Container from "./container";
-import { useTheme } from "next-themes";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -71,7 +71,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="">
+          {/*   <div className="">
             <div>Seguinos en</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a href="/" target="_blank" rel="noopener">
@@ -91,7 +91,7 @@ export default function Footer() {
                 <Linkedin />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
