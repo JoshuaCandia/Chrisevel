@@ -30,7 +30,7 @@ const index = () => {
               </p>
               <ul className="mb-6 md:mb-0">
                 <li className="flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded text-gray-50">
+                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
