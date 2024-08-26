@@ -725,6 +725,24 @@ export const products = [
   },
   {
     type: "FUSION",
+    name: "Unión doble con rosca plástica",
+    category: "FUSION",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
+    },
+    sizes: [
+      "20 x 1/2”",
+      "25 3/4”",
+      "32 x 1”",
+      "40 x 11/4”",
+      "50MM x 11/”",
+      "63 x 2”",
+    ],
+  },
+  {
+    type: "FUSION",
     name: "Buje reducción",
     category: "FUSION",
     image: {
@@ -756,24 +774,7 @@ export const products = [
     },
     sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
   },
-  {
-    type: "FUSION",
-    name: "Unión doble con rosca plástica",
-    category: "FUSION",
-    image: {
-      public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
-    },
-    sizes: [
-      "20 x 1/2”",
-      "25 3/4”",
-      "32 x 1”",
-      "40 x 11/4”",
-      "50MM x 11/”",
-      "63 x 2”",
-    ],
-  },
+
   {
     type: "FUSION",
     name: "Cupla rosca-fusión",

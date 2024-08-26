@@ -8,7 +8,7 @@ const index = () => {
     <div className="flex flex-col justify-center items-center">
       <HeaderProducts title={"TERMOFUSIÓN"} type={"termofusion"} />
       <section>
-        <TitleProduct title="TERMOFUSIÓN" />
+        <TitleProduct title="Termofusión" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:px-16 md:gap-4">
           {products
             ?.filter((product) => product.category === "FUSION")

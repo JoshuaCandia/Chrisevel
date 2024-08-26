@@ -48,15 +48,21 @@ const index = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
-                      Nuestra dirección
-                    </h3>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Washington 496, General Pacheco
-                    </p>
-                    <p className="text-gray-600 dark:text-slate-400">
-                      Buenos Aires, Argentina
-                    </p>
+                    <a
+                      href="https://www.google.com/maps/place/Washington+496,+General+Pacheco,+Buenos+Aires,+Argentina"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 dark:text-slate-400 hover:underline"
+                    >
+                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                        Nuestra dirección
+                      </h3>
+
+                      <p className="text-blue-600">
+                        Washington 496, General Pacheco
+                      </p>
+                      <p className="">Buenos Aires, Argentina</p>
+                    </a>
                   </div>
                 </li>
                 <li className="flex">
@@ -84,12 +90,22 @@ const index = () => {
                     </h3>
                     <a href="tel:+541156161163">
                       <p className="text-gray-600 dark:text-slate-400">
-                        Teléfono: +54 9 11 5616-1163
+                        Teléfono:
+                        {
+                          <span className="text-blue-600">
+                            +54 9 11 5616-1163
+                          </span>
+                        }
                       </p>
                     </a>
                     <a href="mailto:info@enchufando.com">
                       <p className="text-gray-600 dark:text-slate-400">
-                        Mail: info@enchufando.com
+                        Mail:
+                        {
+                          <span className="text-blue-600">
+                            info@enchufando.com
+                          </span>
+                        }
                       </p>
                     </a>
                   </div>
