@@ -30,7 +30,7 @@ const ButtonGoTop = () => {
     <div>
       <Disclosure>
         <Disclosure.Button
-          className={`fixed z-40 flex items-center justify-center transition-opacity duration-300 bg-blue-600 rounded-full shadow-lg right-5 bottom-8 w-14 h-14 focus:outline-none hover:bg-blue-700 focus:bg-blue-700 ease ${
+          className={`fixed z-40 flex items-center justify-center transition-opacity duration-300 bg-blue-600 rounded-full shadow-lg left-5 bottom-8 w-14 h-14 focus:outline-none hover:bg-blue-700 focus:bg-blue-700 ease ${
             isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
           onClick={scrollToTop}
