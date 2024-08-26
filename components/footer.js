@@ -71,17 +71,17 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          {/*   <div className="">
+          <div className="">
             <div>Seguinos en</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a href="/" target="_blank" rel="noopener">
+              {/*    <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
               <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
-              </a>
+              </a> */}
               <a href="/" target="_blank" rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
@@ -91,7 +91,7 @@ export default function Footer() {
                 <Linkedin />
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
