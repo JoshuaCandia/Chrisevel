@@ -8,6 +8,7 @@ import Footer from "../components/footer";
 import Hero from "../components/hero";
 import SectionTitle from "../components/sectionTitle";
 import Video from "../components/video";
+import WhatsappButton from "../components/WhatsappButton";
 
 const Home = () => {
   useEffect(() => {
@@ -66,6 +67,7 @@ const Home = () => {
       </section>
       <Cta />
       <Footer />
+      <WhatsappButton />
     </>
   );
 };

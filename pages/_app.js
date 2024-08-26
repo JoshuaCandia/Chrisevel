@@ -1,9 +1,9 @@
-import { ThemeProvider } from "next-themes";
-import "../css/tailwind.css";
-import Navbar from "../components/navbar";
-import PopupWidget from "../components/popupWidget";
 import { NextUIProvider } from "@nextui-org/react";
-import { Roboto, Open_Sans, Lato, Montserrat } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { Lato, Montserrat, Open_Sans, Roboto } from "next/font/google";
+import ButtonGoTop from "../components/ButtonGoTop";
+import Navbar from "../components/navbar";
+import "../css/tailwind.css";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
         <main className="pt-20 ">
           <Component {...pageProps} />
         </main>
-        <PopupWidget />
+        <ButtonGoTop />
       </ThemeProvider>
     </Providers>
   );

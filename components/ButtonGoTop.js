@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import { Disclosure } from "@headlessui/react";
+import { useEffect, useState } from "react";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -8,7 +8,7 @@ const scrollToTop = () => {
   });
 };
 
-const PopupWidget = () => {
+const ButtonGoTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -30,7 +30,7 @@ const PopupWidget = () => {
     <div>
       <Disclosure>
         <Disclosure.Button
-          className={`fixed z-40 flex items-center justify-center transition-opacity duration-300 bg-blue-600 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-blue-700 focus:bg-blue-700 ease ${
+          className={`fixed z-40 flex items-center justify-center transition-opacity duration-300 bg-blue-600 rounded-full shadow-lg right-5 bottom-8 w-14 h-14 focus:outline-none hover:bg-blue-700 focus:bg-blue-700 ease ${
             isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
           onClick={scrollToTop}
@@ -55,4 +55,4 @@ const PopupWidget = () => {
   );
 };
 
-export default PopupWidget;
+export default ButtonGoTop;
