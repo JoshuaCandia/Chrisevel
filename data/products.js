@@ -140,7 +140,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756709/products/khshguwzpke5vpavrvhc.jpg",
     },
-    sizes: ["1/2", "3/4"],
+    sizes: ["1/2”", "3/4"],
   },
   {
     type: "ROSCADO",
@@ -261,7 +261,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756708/products/djomsk3a7lxhgvmmzywd.jpg",
     },
-    sizes: ["3/4 x 1/2", "1 x 1/2", "1 x 3/4"],
+    sizes: ["3/4” x 1/2”", "1 x 1/2”", "1 x 3/4"],
   },
   {
     type: "ROSCADO",
@@ -277,7 +277,7 @@ export const products = [
 
       "3/4” x 1/2”",
 
-      "1” x 1/2",
+      "1” x 1/2”",
 
       "1” x 3/4”",
 
@@ -341,7 +341,7 @@ export const products = [
       "2 X 15 CM",
       "2 X 20 CM",
       "1/2 X 25 CM",
-      "3/4 X 25 CM",
+      "3/4” X 25 CM",
       "1 X 25 CM",
     ],
   },
@@ -355,7 +355,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756702/products/fvjeetxoh6k2zcbwdgii.jpg",
     },
-    sizes: ["1/2 X 30cm", "1/2 X 40cm", "1/2 X 50cm"],
+    sizes: ["1/2 X 30 CM", "1/2 X 40 CM", "1/2 X 50 CM"],
   },
   {
     type: "ESPIGA",
@@ -433,7 +433,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756709/products/vx1erpcn2ruvm1ggjnj5.jpg",
     },
-    sizes: ["3/4” X 1/2”", "1” X 3/4”", "1” X 1/2"],
+    sizes: ["3/4” X 1/2”", "1” X 3/4”", "1” X 1/2”"],
   },
   {
     type: "ESPIGA",
@@ -679,7 +679,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/iszkrze3jegj12wde6ax.jpg",
     },
-    sizes: ["20MM", "25MM", "32MM"],
+    sizes: ["20 MM", "25 MM", "32 MM"],
   },
   {
     type: "FUSION",
@@ -690,7 +690,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/jtpm4ucberabr9o80wku.jpg",
     },
-    sizes: ["20MM", "25MM", "32MM"],
+    sizes: ["20 MM", "25 MM", "32 MM"],
   },
   {
     type: "FUSION",
@@ -701,7 +701,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/bbfqg58jgjvcqvhek2fo.jpg",
     },
-    sizes: ["20MM", "25MM", "32MM"],
+    sizes: ["20 MM", "25 MM", "32 MM"],
   },
   {
     type: "FUSION",
@@ -712,7 +712,7 @@ export const products = [
       secure_url:
         "https://acdn.mitiendanube.com/stores/001/230/396/products/1-tapa-e05b0b953b4e07ced517131430510330-640-0.jpg",
     },
-    sizes: ["20MM", "25MM", "32MM"],
+    sizes: ["20 MM", "25 MM", "32 MM"],
   },
   {
     type: "FUSION",
@@ -763,7 +763,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/aygadnssxfw3cvxpogbg.png",
     },
-    sizes: ["20MM", "25MM", "32MM"],
+    sizes: ["20 MM", "25 MM", "32 MM"],
   },
   {
     type: "FUSION",
@@ -774,7 +774,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169118/latest-products/IMAGENES_CORTADAS/ajlbf6jnziasbckk7oex.png",
     },
-    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+    sizes: ["20 MM", "25 MM", "32 MM", "40MM", "50MM", "63MM"],
   },
 
   {
@@ -867,6 +867,6 @@ export const products = [
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url: "sin-foto",
     },
-    sizes: ["20MM”", "25MM"],
+    sizes: ["20 MM", "25 MM"],
   },
 ];
