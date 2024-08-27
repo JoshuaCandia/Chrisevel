@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import Benefits from "../components/benefits";
 import Cta from "../components/cta";
 import { benefitOne, benefitTwo } from "../components/data";
-import Faq from "../components/faq";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import SectionTitle from "../components/sectionTitle";
@@ -39,12 +38,7 @@ const Home = () => {
         <Hero />
       </section>
       <section id="beneficios">
-        <SectionTitle
-          pretitle="Beneficios de Enchufando"
-          title=" Porque elegirnos"
-        >
-          Enchufando abre sus puertas en el año 2006, y desde entonces se ha
-          convertido en la fábrica de conexiones plásticas líder en Argentina.
+        <SectionTitle pretitle="" title=" Porque elegirnos">
           Nuestros productos son de la más alta calidad, y nuestra gestión es
           responsable y sostenible.
         </SectionTitle>
@@ -58,13 +52,13 @@ const Home = () => {
       <section id="video">
         <Video />
       </section>
-      <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
+      {/* <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
         Si tienes alguna duda, revisa nuestras preguntas frecuentes. Si no
         encuentras la respuesta que buscas, no dudes en contactarnos.
-      </SectionTitle>
-      <section id="preguntas">
+      </SectionTitle> */}
+      {/*  <section id="preguntas">
         <Faq />
-      </section>
+      </section> */}
       <Cta />
       <Footer />
       <WhatsappButton />

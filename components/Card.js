@@ -1,8 +1,6 @@
-import { useMediaQuery } from "@uidotdev/usehooks";
 import React, { useState } from "react";
 
-const Card = ({ name, category, image, sizes, type }) => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+const Card = ({ name, image, sizes, type }) => {
   const [showSizes, setShowSizes] = useState(false);
 
   const handleMouseEnter = () => {
@@ -22,7 +20,7 @@ const Card = ({ name, category, image, sizes, type }) => {
       className="relative hover:shadow-xl"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={isMobile ? toggleShowSizesMobile : undefined}
+      /*  onClick={isMobile ? toggleShowSizesMobile : undefined} */
     >
       <div className="p-2 md:flex-shrink-0">
         <img
@@ -30,7 +28,7 @@ const Card = ({ name, category, image, sizes, type }) => {
           width="248"
           height="248"
           alt={name}
-          className="rounded-lg max-w-[248px] max-h-[248px] object-fill mx-auto"
+          className="rounded-lg w-[248px] h-[248px] object-fill mx-auto"
         />
         <div className="bg-blue-400 text-center uppercase text-xxl text-white font-bold">
           {name}

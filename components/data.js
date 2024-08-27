@@ -1,22 +1,17 @@
 import {
-  FaceSmileIcon,
   ChartBarSquareIcon,
   DevicePhoneMobileIcon,
-  TruckIcon,
-  SunIcon,
+  FaceSmileIcon,
   FlagIcon,
+  SunIcon,
+  TruckIcon,
 } from "@heroicons/react/24/solid";
 
 const benefitOne = {
   title: "Contamos con stock permanente",
-  desc: "Podemos proveer a nuestros clientes con stock permanente de productos de alta calidad.",
   image:
     "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169931/galpon/aege7z38vdijhw42brlz.jpg",
   bullets: [
-    {
-      title: "Contamos con gran variedad de productos en stock",
-      icon: <ChartBarSquareIcon />,
-    },
     {
       title: "Hacemos envíos a todo el país",
       icon: <TruckIcon />,
@@ -25,6 +20,10 @@ const benefitOne = {
     {
       title: "Podes contactarnos fácilmente",
       icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Contamos con gran variedad de productos en stock",
+      icon: <ChartBarSquareIcon />,
     },
   ],
 };

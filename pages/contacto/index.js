@@ -88,9 +88,26 @@ const index = () => {
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
                       Medios de contacto
                     </h3>
+                    <a href="tel:+541131393596">
+                      <p className="text-gray-600 dark:text-slate-400">
+                        {
+                          <span className="text-blue-600">
+                            +54 9 11 3139-3596
+                          </span>
+                        }
+                      </p>
+                    </a>
+                    <a href="tel:+541124524501">
+                      <p className="text-gray-600 dark:text-slate-400">
+                        {
+                          <span className="text-blue-600">
+                            +54 9 11 2452-4501
+                          </span>
+                        }
+                      </p>
+                    </a>
                     <a href="tel:+541156161163">
                       <p className="text-gray-600 dark:text-slate-400">
-                        Teléfono:
                         {
                           <span className="text-blue-600">
                             +54 9 11 5616-1163
@@ -133,7 +150,7 @@ const index = () => {
                       Horario de atención
                     </h3>
                     <p className="text-gray-600 dark:text-slate-400">
-                      Lunes a Viernes: 08:00 - 18:00
+                      Lunes a Viernes: 08:00 - 13:00 y 14:00 - 17:00
                     </p>
                     <p className="text-gray-600 dark:text-slate-400">
                       Sábados, Domingos y Feriados: Cerrado

@@ -316,34 +316,33 @@ export const products = [
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756707/products/vkw23fba0dyacxw7ww0h.jpg",
     },
     sizes: [
-      "1/2 X 5",
-      "1/2 X 8",
-      "1/2 X 10",
-      "1/2 X 12",
-      "1/2 X 15",
-      "1/2 X 20",
-      "1 X 6",
-      "1 X 8",
-      "1 X 6",
-      "1 X 10",
-      "1 X 12",
-      "1 X 15",
-      "1 X 20",
-      "1 1/4 X 10",
-      "1 1/4 X 12",
-      "1 1/4 X 15",
-      "1 1/4 X 20",
-      "1 1/2 X 10",
-      "1 1/2 X 12",
-      "1 1/2 X 15",
-      "1 1/2 X 20",
-      "2 X 10",
-      "2 X 12",
-      "2 X 15",
-      "2 X 20",
-      "1/2 X 25",
-      "3/4 X 25",
-      "1 X 25",
+      "1/2 X 6 CM",
+      "1/2 X 8 CM",
+      "1/2 X 10 CM",
+      "1/2 X 12 CM",
+      "1/2 X 15 CM",
+      "1/2 X 20 CM",
+      "1 X 6 CM",
+      "1 X 8 CM",
+      "1 X 10 CM",
+      "1 X 12 CM",
+      "1 X 15 CM",
+      "1 X 20 CM",
+      "1 1/4 X 10 CM",
+      "1 1/4 X 12 CM",
+      "1 1/4 X 15 CM",
+      "1 1/4 X 20 CM",
+      "1 1/2 X 10 CM",
+      "1 1/2 X 12 CM",
+      "1 1/2 X 15 CM",
+      "1 1/2 X 20 CM",
+      "2 X 10 CM",
+      "2 X 12 CM",
+      "2 X 15 CM",
+      "2 X 20 CM",
+      "1/2 X 25 CM",
+      "3/4 X 25 CM",
+      "1 X 25 CM",
     ],
   },
 
@@ -403,17 +402,6 @@ export const products = [
     sizes: ["1/2”", "3/4”", "1”", "1 1/4”", "1 1/2”", "2”"],
   },
 
-  {
-    type: "ESPIGA",
-    name: "Codo rosca macho reducción",
-    category: "RIEGO",
-    image: {
-      public_id: "products/ryqbjozk6l0kkcxzwxdh",
-      secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/ryqbjozk6l0kkcxzwxdh.jpg",
-    },
-    sizes: ["3/4 X 1/2", "1 X 3/4", "1 X 1/2"],
-  },
   {
     type: "ESPIGA",
     name: "Codo enchufe rosca hembra",
@@ -476,7 +464,7 @@ export const products = [
     image: {
       public_id: "products/ryqbjozk6l0kkcxzwxdh",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/ryqbjozk6l0kkcxzwxdh.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_917992-MLA47886449535_102021-O.webp",
     },
     sizes: ["3/4” X 1/2”", "1” X  3/4”"],
   },
@@ -489,7 +477,17 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/rgvszl9tpfu7f47ulhzo.jpg",
     },
-    sizes: ["1/2", "3/4", "1", "1 X 1/4", "1 X 1/2", "2", "2 X 1/2", "3", "4"],
+    sizes: [
+      "1/2”",
+      "3/4”",
+      "1”",
+      "1 1/4”",
+      "1 1/2”",
+      "2”",
+      "2 1/2”",
+      "3”",
+      "4”",
+    ],
   },
   {
     type: "KRONA",
@@ -522,7 +520,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697820993/products/ohs9mvbvnh0w8sisc5m6.jpg",
     },
-    sizes: ["1/2”- 3/4” PVC"],
+    sizes: ["1/2” 3/4” PVC"],
   },
   {
     type: "KRONA",
@@ -542,9 +540,15 @@ export const products = [
     image: {
       public_id: "products/wu6k8pchsz1qll47vbhv",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/wu6k8pchsz1qll47vbhv.jpg",
+        "https://www.tiendalincoln.com.py/static/products/DEFAULT/G07002/SMALL/G07002%20ADAPTA.ROS%20SOLD.Krona%20332%2032x1.jpg",
     },
-    sizes: ["20 x 1/2”", "25 x 3/4”", "32 x 1”", "40 x 1 1/4”", "50 x 1 1/2”"],
+    sizes: [
+      "20 MM x 1/2”",
+      "25 MM x 3/4”",
+      "32 MM x 1”",
+      "40 MM x 1 1/4”",
+      "50 MM x 1 1/2”",
+    ],
   },
   {
     type: "KRONA",
@@ -553,7 +557,7 @@ export const products = [
     image: {
       public_id: "products/bbfqg58jgjvcqvhek2fo",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/bbfqg58jgjvcqvhek2fo.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_689046-MLU74088849550_012024-O.webphttps://www.tiendalincoln.com.py/static/products/DEFAULT/G07015/SMALL/G07015%20BUJE%20RED.COR.SO.Krona%20364%2060x50m.jpg",
     },
     sizes: ["25 x 20 MM", "32 x 25 MM", "40 x 32 MM", "50 x 40 MM"],
   },
@@ -564,7 +568,7 @@ export const products = [
     image: {
       public_id: "products/wkicciarpa4jyo8hla7v",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/wkicciarpa4jyo8hla7v.jpg",
+        "https://dcdn.mitiendanube.com/stores/864/808/products/curva-90-a-50-imagen-tienda-nube-092-90f934a27c210081f116328628322272-1024-1024.webp",
     },
     sizes: ["20 MM", "25 MM", "32 MM", "40 MM", "50 MM"],
   },
@@ -575,7 +579,7 @@ export const products = [
     image: {
       public_id: "products/xd3ufqkifl9ly4zdvasb",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697794326/products/xd3ufqkifl9ly4zdvasb.jpg",
+        "https://www.tiendalincoln.com.py/static/products/DEFAULT/G07054/SMALL/G07054%20CODO%20%2045%C2%AA%20SOLDA.Krona%20419%2050mm.jpg",
     },
     sizes: ["20 MM", "25 MM", "32 MM", "40 MM", "50 MM"],
   },
@@ -608,7 +612,7 @@ export const products = [
     image: {
       public_id: "products/jtpm4ucberabr9o80wku",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/jtpm4ucberabr9o80wku.jpg",
+        "https://www.tiendalincoln.com.py/static/products/DEFAULT/G07091/SMALL/G07091%20TEE%20SOLDAR%20%20Krona%20455%2025mm.jpg",
     },
     sizes: ["20 MM", "25 MM", "32 MM", "40 MM", "50 MM"],
   },
@@ -619,7 +623,7 @@ export const products = [
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url:
-        "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
+        "https://www.tiendalincoln.com.py/static/products/DEFAULT/G07115/SMALL/G07115%20UNION%20DOBLE%20SOL.Krona%20479%2060mm.jpg",
     },
     sizes: ["20 MM", "25 MM", "32 MM", "40 MM", "50 MM"],
   },
@@ -632,7 +636,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/doxwzipphszkl2iq79ul.jpg",
     },
-    sizes: ["20 X 1/2”", "25 X 3/4”"],
+    sizes: ["20 MM x 1/2”", "25 MM x 3/4”"],
   },
   {
     type: "KRONA",
@@ -644,17 +648,15 @@ export const products = [
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756703/products/fijvppuk3wl1uc2inzru.jpg",
     },
     sizes: [
-      "20 x 1/2”",
+      "20 MM x 1/2”",
 
-      "25 x 3/4”",
+      "25 MM x 3/4”",
 
-      "25 x 1/2”",
+      "32 MM x 1”",
 
-      "32 x 1”",
+      "40 MM x 1 1/4”",
 
-      "40 x 1 1/4”",
-
-      "50 x 1 1/2”",
+      "50 MM x 1 1/2”",
     ],
   },
   {
@@ -721,7 +723,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
     },
-    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+    sizes: ["20 MM", "25 MM", "32 MM", "40 MM", "50 MM", "63 MM"],
   },
   {
     type: "FUSION",
@@ -733,12 +735,12 @@ export const products = [
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1697756704/products/q80j1pphi4zjj8tbzlut.jpg",
     },
     sizes: [
-      "20 x 1/2”",
-      "25 3/4”",
-      "32 x 1”",
-      "40 x 11/4”",
-      "50MM x 11/”",
-      "63 x 2”",
+      "20 MM x 1/2”",
+      "25 MM x 3/4”",
+      "32 MM x 1”",
+      "40 MM x 11/4”",
+      "50 MM x 11/2”",
+      "63 MM x 2”",
     ],
   },
   {
@@ -750,7 +752,7 @@ export const products = [
       secure_url:
         "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169120/latest-products/IMAGENES_CORTADAS/ln7u6lo0fppxh2coylp5.png",
     },
-    sizes: ["20MM", "25MM", "32MM", "40MM", "50MM", "63MM"],
+    sizes: ["25 MM x 20 MM", "32 MM X 20 MM", "32 MM x 25 MM"],
   },
   {
     type: "FUSION",
