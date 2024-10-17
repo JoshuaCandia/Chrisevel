@@ -32,7 +32,6 @@ const Navbar = () => {
   const navigation = [
     { id: uuidv4(), name: "Beneficios", link: "beneficios" },
     { id: uuidv4(), name: "Presentación", link: "video" },
-    { id: uuidv4(), name: "Preguntas frecuentes", link: "preguntas" },
   ];
 
   const handleNavClick = (link) => {

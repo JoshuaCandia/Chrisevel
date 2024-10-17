@@ -805,7 +805,8 @@ export const products = [
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://giliycia.com.ar/media/catalog/product/cache/99c3ac325871812be19f74bdf645f821/0/4/04713.jpg",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
@@ -815,7 +816,8 @@ export const products = [
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://casamyers.com.mx/img/ItemImages/28301440/28301440.jpg",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
@@ -825,7 +827,8 @@ export const products = [
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://labarraquita.com/wp-content/uploads/2024/01/cupla-inserto-hembra-tf-20mm.png",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
@@ -835,7 +838,8 @@ export const products = [
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://labarraquita.com/wp-content/uploads/2024/01/cupla-inserto-macho-tf-20mm.png",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
@@ -845,27 +849,20 @@ export const products = [
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://casamyers.com.mx/img/ItemImages/28301650/28301650.jpg",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
-  {
-    type: "FUSION",
-    name: "Tee inserción macho",
-    category: "FUSION",
-    image: {
-      public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
-    },
-    sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
-  },
+
   {
     type: "FUSION",
     name: "Llave de paso (BCE)",
     category: "FUSION",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
-      secure_url: "sin-foto",
+      secure_url:
+        "https://http2.mlstatic.com/D_NQ_NP_868113-MLA54304543284_032023-O.webp",
     },
     sizes: ["20 MM", "25 MM"],
   },

@@ -30,7 +30,7 @@ const Card = ({ name, image, sizes, type }) => {
           alt={name}
           className="rounded-lg w-[248px] h-[248px] object-fill mx-auto"
         />
-        <div className="bg-blue-400 text-center uppercase text-xxl text-white font-bold">
+        <div className="bg-black text-center uppercase text-xxl text-white font-bold">
           {name}
         </div>
       </div>

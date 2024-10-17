@@ -1,4 +1,99 @@
+// pages/contact.tsx
+
 import React from "react";
+
+const Contact = () => {
+  return (
+    <main className="flex justify-center items-end lg:mt-24">
+      <div className="bg-gradient-to-b from-blue-50 to-white py-12 px-6 sm:px-8 lg:px-12">
+        <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
+          <div className="flex flex-col lg:flex-row">
+            {/* Logo e Información */}
+            <div className="bg-blue-600 p-8 lg:w-1/3 flex flex-col items-center justify-center">
+              <img
+                src={
+                  "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169724/logos/fyuranu83qla1d6hlv5z.png"
+                }
+                width="216"
+                height="217"
+                className="object-cover"
+                alt="Hero Illustration"
+                loading="eager"
+                style={{ filter: "invert(1)" }}
+              />
+              <h1 className="text-white text-4xl font-bold my-4">Enchufando</h1>
+              <p className="text-blue-200 text-lg text-center">
+                Es una empresa nacida en el 2006, dedicada a la fabricación y
+                comercialización de productos petroquímicos.
+              </p>
+            </div>
+
+            {/* Información de contacto */}
+            <div className="p-8 lg:w-2/3">
+              <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+                Contáctanos
+              </h2>
+
+              <div className="space-y-8">
+                <div className="space-y-2">
+                  <h3 className="mb-2 text-lg font-medium leading-6 dark:text-white">
+                    Horario de atención
+                  </h3>
+                  <p>Lunes a Viernes: 08:00 - 13:00 y 14:00 - 17:00</p>
+                  <p>Sábados, Domingos y Feriados: Cerrado</p>
+                </div>
+
+                {/* Teléfono */}
+                <div className="space-y-2">
+                  <h3 className="text-xl font-medium text-black">Teléfono</h3>
+                  <a
+                    href="tel:+1234567890"
+                    className="text-blue-500 hover:underline text-lg"
+                  >
+                    11 3139 3596
+                  </a>
+                </div>
+
+                {/* Correo electrónico */}
+                <div className="space-y-2">
+                  <h3 className="text-xl font-medium text-black">
+                    Correo electrónico
+                  </h3>
+                  <a
+                    href="mailto:info@enchufando.com"
+                    className="text-blue-500 hover:underline text-lg"
+                  >
+                    info@enchufando.com
+                  </a>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    Nuestra dirección
+                  </h3>
+                  <a
+                    href="https://www.google.com/maps/place/Washington+496,+General+Pacheco,+Buenos+Aires,+Argentina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-slate-400 hover:underline"
+                  >
+                    <p className="text-blue-600">
+                      Washington 496, General Pacheco
+                    </p>
+                  </a>
+                  <p className="">Buenos Aires, Argentina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Contact;
+
+/* import React from "react";
 import Footer from "../../components/footer";
 
 const index = () => {
@@ -229,3 +324,4 @@ const index = () => {
 };
 
 export default index;
+ */
