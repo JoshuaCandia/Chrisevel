@@ -1,7 +1,6 @@
-import Image from "next/image";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import Container from "./container";
-import { useTheme } from "next-themes";
 
 import EnchufandoBrand from "./EnchufandoBrand";
 
@@ -11,10 +10,10 @@ const Hero = () => {
     <>
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="mt-4 mt:lg:0 max-w-2xl mb-8 md:ms-8">
+          <div className="flex flex-col items-center md:block mt-4 mt:lg:0 max-w-2xl mb-8 md:ms-8">
             <EnchufandoBrand />
 
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 ">
+            <p className="py-5 text-xl text-center md:text-left leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 ">
               Enchufando, una empresa argentina fundada en 2006, líder en
               conexiones para la conducción de agua en Argentina.
             </p>

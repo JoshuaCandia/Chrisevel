@@ -7,7 +7,7 @@ export default function Footer() {
   const { theme } = useTheme();
   const navigation = [
     { name: "Productos", link: "/productos" },
-    { name: "Sobre Nosotros", link: "sobre_nosotros" },
+
     { name: "Contacto", link: "contacto" },
   ];
 

@@ -1,37 +1,23 @@
-import { v4 as uuidv4 } from "uuid";
-import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import { useTheme } from "next-themes";
-import { Link as ScrollLink } from "react-scroll";
-import CustomDropdown from "./CustomDropdown";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import CustomDropdown from "./CustomDropdown";
 
 const Navbar = () => {
   const { theme } = useTheme();
   const router = useRouter();
   const [isHome, setIsHome] = useState(router.pathname === "/");
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     setIsHome(router.pathname === "/");
   }, [router.pathname]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const navigation = [
-    { id: uuidv4(), name: "Beneficios", link: "beneficios" },
-    { id: uuidv4(), name: "Presentación", link: "video" },
+    { id: "benefits", name: "Beneficios", link: "beneficios" },
+    { id: "presentation", name: "Presentación", link: "video" },
   ];
 
   const handleNavClick = (link) => {
@@ -43,7 +29,7 @@ const Navbar = () => {
 
   return (
     <Disclosure>
-      {({ open }) => (
+      {({ open, close }) => (
         <div className="w-full fixed top-0 z-50 transition-colors bg-black">
           <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
             {/* Logo */}
@@ -61,7 +47,6 @@ const Navbar = () => {
               </Link>
 
               <div className="xl:hidden flex items-center">
-                {/*   <ThemeChanger className="mr-4" /> */}
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-white rounded-md xl:hidden :text-black focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:text-white dark:focus:bg-trueGray-5hover0"
@@ -94,26 +79,32 @@ const Navbar = () => {
                     to={item.link}
                     smooth={true}
                     duration={500}
-                    offset={-80} // Ajusta este valor según la altura del navbar
-                    onClick={() => handleNavClick(item.link)}
+                    offset={-80}
+                    onClick={() => {
+                      console.log("click");
+                      handleNavClick(item.link);
+                      close();
+                    }}
                     className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {item.name}
                   </ScrollLink>
                 ))}
-                <ScrollLink
+                <Link
                   to="productos"
                   smooth={true}
                   duration={500}
-                  offset={-80} // Ajusta este valor según la altura del navbar
-                  onClick={() => handleNavClick("productos")}
+                  offset={-80}
+                  href="/productos"
+                  onClick={close}
                   className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                 >
                   Productos
-                </ScrollLink>
+                </Link>
 
                 <Link
                   href="/contacto"
+                  onClick={close}
                   className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none"
                 >
                   Contactános

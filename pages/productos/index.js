@@ -6,8 +6,8 @@ const ProductsPage = () => {
   return (
     <div>
       <HeaderProducts title="Productos" type="products" />
-      <section className="flex justify-center mt-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 md:px-2 md:gap-4">
+      <section className="flex justify-center mt-20 px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
           <CardSectionProduct link="/riego" title="Riego" type="riego" />
           <CardSectionProduct
             link="/roscados"
@@ -15,7 +15,7 @@ const ProductsPage = () => {
             type="roscados"
           />
           <CardSectionProduct
-            link="/termofusion"
+            link="/fusion"
             title="Termofusión"
             type="termofusion"
           />
@@ -42,8 +42,10 @@ const CardSectionProduct = ({ title, type, link }) => {
           backgroundImage: setImage(type),
           backgroundSize: "cover",
           backgroundPosition: "center",
+          width: "250px",
+          height: "200px",
         }}
-        className="hover:cursor-pointer d-flex py-20 w-80 bg-green-500 ps-8"
+        className="hover:cursor-pointer d-flex py-20  bg-green-500 ps-8"
       >
         <article className="bg-black flex justify-start items-center">
           <span className=" flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">

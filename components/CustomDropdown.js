@@ -1,14 +1,13 @@
+import {
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+} from "@nextui-org/react";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { useRouter } from "next/router";
-import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-} from "@nextui-org/react";
-import Link from "next/link";
 
 const CustomDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +16,7 @@ const CustomDropdown = () => {
   const productsMenu = [
     { id: uuidv4(), name: "Riego", link: "/riego" },
     { id: uuidv4(), name: "Roscados", link: "/roscados" },
-    { id: uuidv4(), name: "Termofusión", link: "/termofusion" },
+    { id: uuidv4(), name: "Termofusión", link: "/fusion" },
     { id: uuidv4(), name: "PVC Soldable", link: "/pvc" },
     { id: uuidv4(), name: "Válvulas y Canillas", link: "/valvulas-y-canillas" },
   ];

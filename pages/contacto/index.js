@@ -1,11 +1,11 @@
 // pages/contact.tsx
-
 import React from "react";
+import Footer from "../../components/footer";
 
 const Contact = () => {
   return (
-    <main className="flex justify-center items-end lg:mt-24">
-      <div className="bg-gradient-to-b from-blue-50 to-white py-12 px-6 sm:px-8 lg:px-12">
+    <main className="lg:pt-24 bg-gradient-to-b from-blue-50 to-white">
+      <div className=" py-12 px-6 sm:px-8 lg:px-12">
         <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
           <div className="flex flex-col lg:flex-row">
             {/* Logo e Información */}
@@ -87,6 +87,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 };
