@@ -828,7 +828,7 @@ export const products = [
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url:
-        "https://labarraquita.com/wp-content/uploads/2024/01/cupla-inserto-hembra-tf-20mm.png",
+        "https://acdn.mitiendanube.com/stores/002/897/767/products/cupla-con-insert-381-0768d5aa5043411c5f16819300275545-1024-1024.webp",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
@@ -839,7 +839,7 @@ export const products = [
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url:
-        "https://labarraquita.com/wp-content/uploads/2024/01/cupla-inserto-macho-tf-20mm.png",
+        "https://http2.mlstatic.com/D_NQ_NP_668407-MLA45363061630_032021-O.webp",
     },
     sizes: ["20 x 1/2”", "25 3/4”", "32 x 1”"],
   },
