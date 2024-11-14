@@ -1,7 +1,7 @@
-import Link from "next/link";
+/* import Link from "next/link";
 import Footer from "../../components/footer.js";
-import HeaderProducts from "../../components/HeaderProducts";
-import { setImage } from "../../utils/functions";
+import HeaderProducts from "../../components/HeaderProducts.js";
+import { setImage } from "../../utils/functions.js";
 const ProductsPage = () => {
   return (
     <div>
@@ -64,3 +64,4 @@ const CardSectionProduct = ({ title, type, link }) => {
     </Link>
   );
 };
+ */
