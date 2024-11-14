@@ -48,7 +48,7 @@ const CardSectionProduct = ({ title, type, link }) => {
         className="hover:cursor-pointer d-flex py-20  bg-green-500 ps-8"
       >
         <article className="bg-black flex justify-start items-center">
-          <span className=" flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
+          <span className=" flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-gray-100">
             <img
               src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169725/logos/ksoswjkido8k6utacxtp.png"
               width="70"

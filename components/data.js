@@ -8,12 +8,12 @@ import {
 } from "@heroicons/react/24/solid";
 
 const benefitOne = {
-  title: "Contamos con stock permanente",
+  title: "Recargas al instante, al mejor precio.",
   image:
     "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169931/galpon/aege7z38vdijhw42brlz.jpg",
   bullets: [
     {
-      title: "Hacemos envíos a todo el país",
+      title: "Retiramos tus matafuegos en el mismo día",
       icon: <TruckIcon />,
     },
 
