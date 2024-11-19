@@ -39,8 +39,8 @@ const Home = () => {
       </section>
       <section id="beneficios">
         <SectionTitle pretitle="" title=" Porque elegirnos">
-          Nuestros productos son de la más alta calidad, y nuestra gestión es
-          responsable y sostenible.
+          Trabajamos hace mas de 50 años ofreciendo el mejor servicio al mejor
+          precio.
         </SectionTitle>
 
         <Benefits data={benefitOne} />
