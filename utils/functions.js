@@ -8,4 +8,7 @@ export const setImage = (type) => {
   if (type === "carteleria") {
     return "url('https://www.seguridadencarteles.com.ar/documentos/16/63_Estandar.jpg')";
   }
+  if (type === "purificador") {
+    return "url('https://res.cloudinary.com/dj4h7zbih/image/upload/v1732043429/Productos%20chrisevel/joo3pejibogure8fhbd1.webp')";
+  }
 };

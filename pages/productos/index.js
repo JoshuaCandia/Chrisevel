@@ -8,7 +8,7 @@ const ProductsPage = () => {
     <div>
       <HeaderProducts title="Productos" type="products" />
       <section className="flex justify-center md:mt-10 px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
           <CardSectionProduct
             link="/matafuegos"
             title="Matafuegos"
@@ -20,6 +20,12 @@ const ProductsPage = () => {
             link="/carteleria"
             title="Cartelería y señalización"
             type="carteleria"
+          />
+
+          <CardSectionProduct
+            link="/purificador"
+            title="Purificador de agua"
+            type="purificador"
           />
         </div>
       </section>
@@ -41,7 +47,7 @@ const CardSectionProduct = ({ title, type, link }) => {
           width: "300px",
           height: "200px",
         }}
-        className="hover:cursor-pointer d-flex py-20  bg-green-500 ps-8"
+        className="hover:cursor-pointer d-flex py-20  bg-white ps-8"
       >
         <article className="bg-black flex justify-start items-center">
           <span className=" flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-gray-100">
