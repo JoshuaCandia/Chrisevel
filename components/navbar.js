@@ -22,11 +22,11 @@ const Navbar = () => {
 
   return (
     <Disclosure>
-      {({ open, close }) => (
+      {({ open }) => (
         <div className="w-full fixed top-0 z-50 transition-colors bg-[#f5f5f5] shadow-lg">
-          <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
-            {/* Logo */}
-            <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
+          <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between lg:px-0">
+            {/* Logo y Botón */}
+            <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
               <Link href="/">
                 <span className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-black">
                   <img
@@ -39,13 +39,13 @@ const Navbar = () => {
                 </span>
               </Link>
 
-              <div className="xl:hidden flex items-center">
+              <div className="lg:hidden flex items-center">
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-black rounded-md xl:hidden focus:text-red-500 focus:bg-red-100 focus:outline-none dark:text-black dark:focus:bg-trueGray-5hover0"
+                  className="px-2 py-1 ml-auto text-black rounded-md focus:outline-none"
                 >
                   <svg
-                    className="w-6 h-6 fill-current"
+                    className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
@@ -58,7 +58,7 @@ const Navbar = () => {
                     ) : (
                       <path
                         fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"
                       />
                     )}
                   </svg>
@@ -66,45 +66,64 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Menu */}
-            <div className="hidden text-center xl:flex xl:items-center">
-              <ul className="items-center justify-end flex-1 pt-6 list-none xl:pt-0 xl:flex">
+            <div className="hidden lg:flex lg:items-center space-x-8">
+              <ScrollLink
+                to="inicio"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={() => handleNavClick("inicio")}
+                className="text-lg text-black cursor-pointer hover:text-gray-800"
+              >
+                Inicio
+              </ScrollLink>
+              <CustomDropdown />
+              <Link
+                href="/servicios"
+                className="text-lg text-black cursor-pointer hover:text-gray-800"
+              >
+                Servicios
+              </Link>
+            </div>
+            <Link
+              href="/contacto"
+              className="hidden lg:block text-lg text-white bg-red-700 rounded-md px-6 py-2"
+            >
+              Contactános
+            </Link>
+            {/* Navegación para pantallas pequeñas */}
+            <Disclosure.Panel className="lg:hidden">
+              <ul className="flex flex-col items-start p-4 space-y-2">
                 <ScrollLink
-                  onClick={() => handleNavClick("inicio")}
                   to="inicio"
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                  onClick={() => handleNavClick("inicio")}
+                  className="block text-lg text-black cursor-pointer hover:text-gray-800"
                 >
                   Inicio
                 </ScrollLink>
-                <CustomDropdown />
-
                 <Link
-                  to="productos"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
+                  href="/productos"
+                  className="block text-lg text-black cursor-pointer hover:text-gray-800"
+                >
+                  Productos
+                </Link>
+                <Link
                   href="/servicios"
-                  onClick={close}
-                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-gray-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointered-100 cursor-pointer"
+                  className="block text-lg text-black cursor-pointer hover:text-gray-800"
                 >
                   Servicios
                 </Link>
+                <Link
+                  href="/contacto"
+                  className="block text-lg text-black cursor-pointer hover:text-gray-800"
+                >
+                  Contactános
+                </Link>
               </ul>
-            </div>
-
-            <div className="hidden mr-3 space-x-4 xl:flex nav__item">
-              {/*  <ThemeChanger className="" /> */}
-
-              <Link
-                href="/contacto"
-                className="font-sans px-6 py-2 text-white bg-red-700 rounded-md md:ml-5"
-              >
-                Contactános
-              </Link>
-            </div>
+            </Disclosure.Panel>
           </nav>
         </div>
       )}
