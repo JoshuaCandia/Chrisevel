@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="flex items-center justify-center lg:justify-end w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-end w-8/12 md:w-10/12 lg:w-full">
             <img
-              src=""
+              src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1732035608/f2rnyymaysvlqxmttr10.jpg"
               width="416"
               height="317"
               className="object-cover"

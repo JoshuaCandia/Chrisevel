@@ -21,10 +21,10 @@ const Contact = () => {
                 loading="eager"
                 style={{ filter: "invert(1)" }}
               />
-              <h1 className="text-white text-4xl font-bold my-4">Enchufando</h1>
+              <h1 className="text-white text-4xl font-bold my-4">Chrisevel</h1>
               <p className="text-red-200 text-lg text-center">
-                Es una empresa nacida en el 2006, dedicada a la fabricación y
-                comercialización de productos petroquímicos.
+                Es una empresa nacida en 1978, dedicada a la venta y recarga de
+                matafuegos y productos de seguridad.
               </p>
             </div>
 
@@ -39,8 +39,9 @@ const Contact = () => {
                   <h3 className="mb-2 text-lg font-medium leading-6 dark:text-white">
                     Horario de atención
                   </h3>
-                  <p>Lunes a Viernes: 08:00 - 13:00 y 14:00 - 17:00</p>
-                  <p>Sábados, Domingos y Feriados: Cerrado</p>
+                  <p>Lunes a Viernes: 09:00 - 13:00 y 15:00 - 18:00</p>
+                  <p>Sábados: 09:00 - 13:00</p>
+                  <p>Domingos y Feriados: Cerrado</p>
                 </div>
 
                 {/* Teléfono */}
@@ -60,15 +61,15 @@ const Contact = () => {
                     Correo electrónico
                   </h3>
                   <a
-                    href="mailto:info@enchufando.com"
+                    href="mailto:chrisevelmatafuegos@yahoo.com.ar"
                     className="text-red-500 hover:underline text-lg"
                   >
-                    info@enchufando.com
+                    chrisevelmatafuegos@yahoo.com.ar
                   </a>
                 </div>
                 <div className="space-y-2">
                   <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
-                    Nuestra dirección
+                    Nuestras direcciónes
                   </h3>
                   <a
                     href="https://www.google.com/maps/place/Washington+496,+General+Pacheco,+Buenos+Aires,+Argentina"
@@ -77,7 +78,18 @@ const Contact = () => {
                     className="text-gray-600 dark:text-slate-400 hover:underline"
                   >
                     <p className="text-red-600">
-                      Washington 496, General Pacheco
+                      San Juan 915, General Pacheco
+                    </p>
+                  </a>
+                  <p className="">Buenos Aires, Argentina</p>
+                  <a
+                    href="https://www.google.com/maps/dir//chrisevel+2/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x95bca501fedfd0b3:0x7fb2ce12e8f7472a?sa=X&ved=1t:3061&ictx=111"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-slate-400 hover:underline"
+                  >
+                    <p className="text-red-600">
+                      Lisandro de la Torre 2424 , Troncos del talar
                     </p>
                   </a>
                   <p className="">Buenos Aires, Argentina</p>
@@ -115,7 +127,7 @@ const index = () => {
           <div className="grid md:grid-cols-2">
             <div className="h-full pr-6">
               <p className="text-base font-semibold uppercase tracking-wide text-text-red-600 dark:text-red-200">
-                Enchufando
+                Chrisevel
               </p>
               <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
                 Es una empresa nacida en el 2006, dedicada a la fabricación y
@@ -211,12 +223,12 @@ const index = () => {
                         }
                       </p>
                     </a>
-                    <a href="mailto:info@enchufando.com">
+                    <a href="mailto:info@Chrisevel.com">
                       <p className="text-gray-600 dark:text-slate-400">
                         Mail:
                         {
                           <span className="text-red-600">
-                            info@enchufando.com
+                            info@Chrisevel.com
                           </span>
                         }
                       </p>

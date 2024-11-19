@@ -45,12 +45,12 @@ const faqdata = [
   {
     question: "¿Cuánto tiempo demora el envío?",
     answer:
-      "Los envios demoran entre 48 y 72 horas, también es posible hacer el retiro en nuestro depósito.",
+      "Los envios demoran entre 24 a 48 horas, también es posible hacer el retiro en nuestro depósito.",
   },
   {
     question: "¿Puedo hablar con un representante de ventas?",
     answer:
-      "Sí, puedes contactarnos por teléfono o por correo electrónico, y un representante de ventas te atenderá.",
+      "Sí, puedes contactarnos por teléfono o por correo electrónico, y un representante de ventas te va a atender.",
   },
 ];
 

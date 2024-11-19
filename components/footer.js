@@ -24,24 +24,19 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-gray-100"
               >
                 <img
-                  src={
-                    theme === "dark"
-                      ? "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169390/logos/t4htuseubqg4qrqcjpcr.png"
-                      : "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169724/logos/fyuranu83qla1d6hlv5z.png"
-                  }
+                  src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1731588627/nb9wu1pk2k19gabguvmy.png"
                   alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  width="100"
+                  height="100"
+                  className="w-36"
                 />
-                <span>Enchufando</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Enchufando es una fábrica de conexiones plásticas, líder en su
-              rubro. Nuestros productos son de la más alta calidad, y nuestra
-              gestión es responsable y sostenible.
+              Chrisevel es una empresa dedicada a la venta y recarga de
+              matafuegos y productos de seguridad. Nuestro objetivo es brindar
+              un servicio de calidad a nuestros clientes.
             </div>
           </div>
 
@@ -95,7 +90,7 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © Enchufando {new Date().getFullYear()}.
+          Copyright © Chrisevel {new Date().getFullYear()}.
         </div>
       </Container>
     </div>

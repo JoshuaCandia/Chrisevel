@@ -80,11 +80,10 @@ const Navbar = () => {
                     duration={500}
                     offset={-80}
                     onClick={() => {
-                      console.log("click");
                       handleNavClick(item.link);
                       close();
                     }}
-                    className="w-full px-4 py-2 -ml-4 text-red-500 rounded-md dark:text-red-500 hover:text-gray-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
+                    className="w-full px-4 py-2 -ml-4 text-red-500 rounded-md dark:text-red-500 hover:text-red-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {item.name}
                   </ScrollLink>
@@ -96,7 +95,7 @@ const Navbar = () => {
                   offset={-80}
                   href="/productos"
                   onClick={close}
-                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
+                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                 >
                   Productos
                 </Link> */}
@@ -104,7 +103,7 @@ const Navbar = () => {
                 <Link
                   href="/contacto"
                   onClick={close}
-                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none"
+                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none"
                 >
                   Contactános
                 </Link>
@@ -120,7 +119,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-200 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                 >
                   Inicio
                 </ScrollLink>
@@ -134,7 +133,7 @@ const Navbar = () => {
                       duration={500}
                       offset={-380}
                       onClick={() => handleNavClick(menu.link)}
-                      className=" inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-200 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                      className=" inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                     >
                       <span className="w-full">{menu.name}</span>
                     </ScrollLink>

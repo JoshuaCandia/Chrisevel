@@ -10,7 +10,7 @@ import {
 const benefitOne = {
   title: "Recargas al instante, al mejor precio.",
   image:
-    "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169931/galpon/aege7z38vdijhw42brlz.jpg",
+    "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732035406/p00qxs6nscxdlxvq5eto.png",
   bullets: [
     {
       title: "Retiramos tus matafuegos en el mismo día",
@@ -32,7 +32,7 @@ const benefitTwo = {
   title: "Beneficios de trabajar con nosotros",
   desc: "",
   image:
-    "https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169933/galpon/bygkuaqltj3xnjzkbdrg.jpg",
+    "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732035333/a5b3vmwdbmtxpamlzifg.jpg",
   bullets: [
     {
       title: "Atención al cliente personalizada",
@@ -44,7 +44,7 @@ const benefitTwo = {
       icon: <SunIcon />,
     },
     {
-      title: "Productos nacionales e importados",
+      title: "Retiramos tus matafuegos en el mismo día",
       icon: <FlagIcon />,
     },
   ],
