@@ -14,7 +14,7 @@ const Hero = () => {
             <ChrisevelBrand />
 
             <p className="py-5 text-xl text-center md:text-left leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300 ">
-              Chrisevel Matafuegos es una empresa fundada en 1978, dedicada a la
+              Chrisevel Matafuegos es una empresa fundada en 1977, dedicada a la
               venta y recarga de matafuegos y artículos de seguridad.
             </p>
 

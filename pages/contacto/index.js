@@ -22,7 +22,7 @@ const Contact = () => {
               <h1 className="text-white text-4xl font-bold my-4">Chrisevel</h1>
               <p className="text-red-200 text-lg text-center">
                 Empresa dedicada a la venta y recarga de matafuegos y productos
-                de seguridad desde 1978.
+                de seguridad desde 1977.
               </p>
             </div>
 
