@@ -292,7 +292,7 @@ export const products = [
   {
     type: "sifones",
     category: "sifones",
-    name: "Sifón",
+    name: "Sifón Drago",
     image: {
       public_id: "products/q80j1pphi4zjj8tbzlut",
       secure_url:
@@ -365,5 +365,60 @@ export const products = [
         "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732043874/Productos%20chrisevel/y8hol7x3bx4slus0bheh.webp",
     },
     sizes: ["30 x 40 cm", "40 x 60 cm", "60 x 90 cm"],
+  },
+  {
+    type: "seguridad",
+    category: "seguridad",
+    name: "Botiquin primeros auxilios",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732044477/Productos%20chrisevel/irv9ykcvkbaznaqlv769.webp",
+    },
+    sizes: ["reglamentaria"],
+  },
+  {
+    type: "seguridad",
+    category: "seguridad",
+    name: "Botiquin madera primeros auxilios",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732044531/Productos%20chrisevel/ezgql7cyz3refwa10k8o.webp",
+    },
+    sizes: ["reglamentaria"],
+  },
+  {
+    type: "seguridad",
+    category: "seguridad",
+    name: "Baliza reflectiva reglamentaria",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732044263/Productos%20chrisevel/wk69yeemuklg8v0g94xx.webp",
+    },
+    sizes: ["reglamentaria"],
+  },
+  {
+    type: "seguridad",
+    category: "seguridad",
+    name: "Manta mortuoria",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732044312/Productos%20chrisevel/u77jhuk1yos6hygulf7n.webp",
+    },
+    sizes: ["reglamentaria"],
+  },
+  {
+    type: "seguridad",
+    category: "seguridad",
+    name: "Bolsa mortuoria",
+    image: {
+      public_id: "products/q80j1pphi4zjj8tbzlut",
+      secure_url:
+        "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732044359/Productos%20chrisevel/prjtdpy6wmsuhc9qhfak.webp",
+    },
+    sizes: ["reglamentaria"],
   },
 ];

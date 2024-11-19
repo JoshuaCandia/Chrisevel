@@ -17,6 +17,8 @@ const CustomDropdown = () => {
     { id: uuidv4(), name: "Matafuegos", link: "/matafuegos" },
     { id: uuidv4(), name: "Sifones", link: "/sifones" },
     { id: uuidv4(), name: "Cartelería y señalización", link: "/carteleria" },
+    { id: uuidv4(), name: "Seguridad vial", link: "/seguridad" },
+    { id: uuidv4(), name: "Purificador de agua", link: "/purificador" },
   ];
 
   const handleDropdownClick = (link) => {
