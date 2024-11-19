@@ -5,7 +5,7 @@ export default function WhatsappButton() {
   return (
     <FloatingWhatsApp
       phoneNumber="+5491131393596"
-      accountName="Enchufando"
+      accountName="Chrisevel"
       avatar="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169725/logos/ksoswjkido8k6utacxtp.png"
       statusMessage="Respondiendo normalmente en unos minutos"
       chatMessage="¡Hola! ¿Cómo podemos ayudarte?"

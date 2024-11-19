@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
@@ -16,7 +15,7 @@ const Benefits = (props) => {
             <img
               src={data.image}
               alt="N"
-              width="351"
+              width="551"
               height="auto"
               className="object-cover"
             />
@@ -57,9 +56,9 @@ function Benefit(props) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-blue-500 rounded-md w-11 h-11 ">
+        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-red-500 rounded-md w-11 h-11 ">
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-blue-50",
+            className: "w-7 h-7 text-red-50",
           })}
         </div>
         <div>

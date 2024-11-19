@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
@@ -81,7 +80,7 @@ function Mark(props) {
   return (
     <>
       {" "}
-      <mark className="text-blue-800 bg-blue-100 rounded-md ring-blue-100 ring-4 dark:ring-blue-900 dark:bg-blue-900 dark:text-blue-200">
+      <mark className="text-red-800 bg-red-100 rounded-md ring-red-100 ring-4 dark:ring-red-900 dark:bg-red-900 dark:text-red-200">
         {props.children}
       </mark>{" "}
     </>

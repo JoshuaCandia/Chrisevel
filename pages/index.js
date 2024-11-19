@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import Benefits from "../components/benefits";
 import Cta from "../components/cta";
 import { benefitOne, benefitTwo } from "../components/data";
+import Faq from "../components/faq";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import SectionTitle from "../components/sectionTitle";
-import Video from "../components/video";
 import WhatsappButton from "../components/WhatsappButton";
 
 const Home = () => {
@@ -26,10 +26,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Enchufando</title>
+        <title>Chrisevel</title>
         <meta
           name="description"
-          content="Página oficial de Enchufando, la mejor fábrica de conexiones plásticas de la región."
+          content="Página oficial de Chrisevel, casa de matafuegos de zona norte"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -46,19 +46,14 @@ const Home = () => {
         <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
       </section>
-      <SectionTitle pretitle="Video de presentación" title="Nuestros comienzos">
-        Mira nuestro video de presentación y conoce más sobre nuestra historia.
-      </SectionTitle>
-      <section id="video">
-        <Video />
-      </section>
-      {/* <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
+
+      <SectionTitle pretitle="FAQ" title="Preguntas Frecuentes">
         Si tienes alguna duda, revisa nuestras preguntas frecuentes. Si no
         encuentras la respuesta que buscas, no dudes en contactarnos.
-      </SectionTitle> */}
-      {/*  <section id="preguntas">
+      </SectionTitle>
+      <section id="preguntas">
         <Faq />
-      </section> */}
+      </section>
       <Cta />
       <Footer />
       <WhatsappButton />

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import CustomDropdown from "./CustomDropdown";
 
 const Navbar = () => {
   const { theme } = useTheme();
@@ -17,7 +16,7 @@ const Navbar = () => {
 
   const navigation = [
     { id: "benefits", name: "Beneficios", link: "beneficios" },
-    { id: "presentation", name: "Presentación", link: "video" },
+    { id: "preguntas", name: "Preguntas Frecuentes", link: "preguntas" },
   ];
 
   const handleNavClick = (link) => {
@@ -30,14 +29,14 @@ const Navbar = () => {
   return (
     <Disclosure>
       {({ open, close }) => (
-        <div className="w-full fixed top-0 z-50 transition-colors bg-black">
+        <div className="w-full fixed top-0 z-50 transition-colors bg-[#f5f5f5] shadow-lg">
           <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto xl:justify-between xl:px-0">
             {/* Logo */}
             <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
               <Link href="/">
-                <span className="flex items-center space-x-2 text-2xl font-medium text-blue-500 dark:text-white">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-white">
                   <img
-                    src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169390/logos/t4htuseubqg4qrqcjpcr.png"
+                    src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1731588627/nb9wu1pk2k19gabguvmy.png"
                     alt="N"
                     width="100"
                     height="100"
@@ -49,7 +48,7 @@ const Navbar = () => {
               <div className="xl:hidden flex items-center">
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-white rounded-md xl:hidden :text-black focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:text-white dark:focus:bg-trueGray-5hover0"
+                  className="px-2 py-1 ml-auto text-black rounded-md xl:hidden :text-black focus:text-red-500 focus:bg-red-100 focus:outline-none dark:text-white dark:focus:bg-trueGray-5hover0"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -81,31 +80,30 @@ const Navbar = () => {
                     duration={500}
                     offset={-80}
                     onClick={() => {
-                      console.log("click");
                       handleNavClick(item.link);
                       close();
                     }}
-                    className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
+                    className="w-full px-4 py-2 -ml-4 text-red-500 rounded-md dark:text-red-500 hover:text-red-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                   >
                     {item.name}
                   </ScrollLink>
                 ))}
-                <Link
+                {/*   <Link
                   to="productos"
                   smooth={true}
                   duration={500}
                   offset={-80}
                   href="/productos"
                   onClick={close}
-                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none cursor-pointer"
+                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
                 >
                   Productos
-                </Link>
+                </Link> */}
 
                 <Link
                   href="/contacto"
                   onClick={close}
-                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-white focus:outline-none"
+                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none"
                 >
                   Contactános
                 </Link>
@@ -121,11 +119,11 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   offset={-80}
-                  className="inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                 >
                   Inicio
                 </ScrollLink>
-                <CustomDropdown />
+                {/*  <CustomDropdown /> */}
 
                 {navigation.map((menu) => (
                   <li className="mr-3 nav__item" key={menu.id}>
@@ -135,7 +133,7 @@ const Navbar = () => {
                       duration={500}
                       offset={-380}
                       onClick={() => handleNavClick(menu.link)}
-                      className=" inline-block px-4 py-2 text-lg font-normal text-white no-underline rounded-md dark:text-white hover:text-gray-200 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-white cursor-pointer"
+                      className=" inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
                     >
                       <span className="w-full">{menu.name}</span>
                     </ScrollLink>
@@ -149,7 +147,7 @@ const Navbar = () => {
 
               <Link
                 href="/contacto"
-                className="font-sans px-6 py-2 text-white bg-blue-700 rounded-md md:ml-5"
+                className="font-sans px-6 py-2 text-white bg-red-700 rounded-md md:ml-5"
               >
                 Contactános
               </Link>
