@@ -1,23 +1,17 @@
 import { Disclosure } from "@headlessui/react";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import CustomDropdown from "./CustomDropdown";
 
 const Navbar = () => {
-  const { theme } = useTheme();
   const router = useRouter();
   const [isHome, setIsHome] = useState(router.pathname === "/");
 
   useEffect(() => {
     setIsHome(router.pathname === "/");
   }, [router.pathname]);
-
-  const navigation = [
-    { id: "benefits", name: "Beneficios", link: "beneficios" },
-    { id: "preguntas", name: "Preguntas Frecuentes", link: "preguntas" },
-  ];
 
   const handleNavClick = (link) => {
     if (!isHome) {
@@ -34,7 +28,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex flex-wrap items-center justify-between w-full xl:w-auto">
               <Link href="/">
-                <span className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-white">
+                <span className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-black">
                   <img
                     src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1731588627/nb9wu1pk2k19gabguvmy.png"
                     alt="N"
@@ -48,7 +42,7 @@ const Navbar = () => {
               <div className="xl:hidden flex items-center">
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-black rounded-md xl:hidden :text-black focus:text-red-500 focus:bg-red-100 focus:outline-none dark:text-white dark:focus:bg-trueGray-5hover0"
+                  className="px-2 py-1 ml-auto text-black rounded-md xl:hidden focus:text-red-500 focus:bg-red-100 focus:outline-none dark:text-black dark:focus:bg-trueGray-5hover0"
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -70,44 +64,6 @@ const Navbar = () => {
                   </svg>
                 </Disclosure.Button>
               </div>
-
-              <Disclosure.Panel className="flex flex-wrap w-full my-5 xl:hidden">
-                {navigation.map((item) => (
-                  <ScrollLink
-                    key={item.id}
-                    to={item.link}
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    onClick={() => {
-                      handleNavClick(item.link);
-                      close();
-                    }}
-                    className="w-full px-4 py-2 -ml-4 text-red-500 rounded-md dark:text-red-500 hover:text-red-200 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
-                  >
-                    {item.name}
-                  </ScrollLink>
-                ))}
-                {/*   <Link
-                  to="productos"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  href="/productos"
-                  onClick={close}
-                  className="w-full px-4 py-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none cursor-pointer"
-                >
-                  Productos
-                </Link> */}
-
-                <Link
-                  href="/contacto"
-                  onClick={close}
-                  className="w-full px-4 py-2 mt-2 -ml-4 text-white rounded-md dark:text-white hover:text-gray-800 focus:text-red-500 focus:bg-red-100 dark:focus:bg-white focus:outline-none"
-                >
-                  Contactános
-                </Link>
-              </Disclosure.Panel>
             </div>
 
             {/* Menu */}
@@ -123,22 +79,19 @@ const Navbar = () => {
                 >
                   Inicio
                 </ScrollLink>
-                {/*  <CustomDropdown /> */}
+                <CustomDropdown />
 
-                {navigation.map((menu) => (
-                  <li className="mr-3 nav__item" key={menu.id}>
-                    <ScrollLink
-                      to={menu.link}
-                      smooth={true}
-                      duration={500}
-                      offset={-380}
-                      onClick={() => handleNavClick(menu.link)}
-                      className=" inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointer"
-                    >
-                      <span className="w-full">{menu.name}</span>
-                    </ScrollLink>
-                  </li>
-                ))}
+                <Link
+                  to="productos"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  href="/servicios"
+                  onClick={close}
+                  className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-gray-800 focus:text-gray-500 focus:bg-red-100 focus:outline-none dark:focus:bg-white cursor-pointered-100 cursor-pointer"
+                >
+                  Servicios
+                </Link>
               </ul>
             </div>
 

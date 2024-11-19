@@ -14,11 +14,9 @@ const CustomDropdown = () => {
   const router = useRouter();
 
   const productsMenu = [
-    { id: uuidv4(), name: "Riego", link: "/riego" },
-    { id: uuidv4(), name: "Roscados", link: "/roscados" },
-    { id: uuidv4(), name: "Termofusión", link: "/fusion" },
-    { id: uuidv4(), name: "PVC Soldable", link: "/pvc" },
-    { id: uuidv4(), name: "Válvulas y Canillas", link: "/valvulas-y-canillas" },
+    { id: uuidv4(), name: "Matafuegos", link: "/matafuegos" },
+    { id: uuidv4(), name: "Sifones", link: "/sifones" },
+    { id: uuidv4(), name: "Cartelería y señalización", link: "/carteleria" },
   ];
 
   const handleDropdownClick = (link) => {
@@ -37,7 +35,7 @@ const CustomDropdown = () => {
       >
         <Button
           variant="light"
-          className="inline-block text-lg font-normal text-white no-underline rounded-md dark:text-gray-200 hover:text-bg-white/70 focus:text-bg-white/70 focus:bg-red-100 focus:outline-none dark:focus:bg-white/70"
+          className="inline-block text-lg font-normal text-black no-underline rounded-md dark:text-gray-200 hover:text-bg-black/70 focus:text-bg-black/70 focus:bg-red-100 focus:outline-none dark:focus:bg-black/70"
           onClick={handleButtonClick}
         >
           Productos

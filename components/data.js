@@ -29,22 +29,22 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "Beneficios de trabajar con nosotros",
+  title: "Nuestros servicios mas populares",
   desc: "",
   image:
-    "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732035333/a5b3vmwdbmtxpamlzifg.jpg",
+    "https://res.cloudinary.com/dj4h7zbih/image/upload/v1732041473/j8kqgyihy8ysmm3twr02.jpg",
   bullets: [
     {
-      title: "Atención al cliente personalizada",
+      title: "Recarga de matafuegos",
       icon: <FaceSmileIcon />,
     },
 
     {
-      title: "Productos de alta calidad",
+      title: "Reparación y venta de sifones",
       icon: <SunIcon />,
     },
     {
-      title: "Retiramos tus matafuegos en el mismo día",
+      title: "Venta de cartelería y señalización",
       icon: <FlagIcon />,
     },
   ],
