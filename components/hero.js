@@ -20,11 +20,11 @@ const Hero = () => {
 
             <div className="flex flex-col items-center space-y-3 sm:space-x-3 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
-                href="/productos"
+                href="/contacto"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-red-700 rounded-md "
               >
-                Productos
+                Contactános
               </Link>
             </div>
           </div>
