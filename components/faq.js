@@ -39,8 +39,9 @@ const faqdata = [
     answer: "Sí, contamos con stock de todos nuestros productos.",
   },
   {
-    question: "¿Hacen envíos al interior del país?",
-    answer: "Sí, hacemos envíos a todo el país.",
+    question: "¿Dónde están ubicados?",
+    answer:
+      "Nos encontramos en General pacheco y Troncos del talar, Provincia de Buenos Aires.",
   },
   {
     question: "¿Cuánto tiempo demora el envío?",
