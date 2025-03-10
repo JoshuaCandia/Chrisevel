@@ -10,15 +10,6 @@ const Contact = () => {
           <div className="flex flex-col lg:flex-row">
             {/* Logo e Información */}
             <div className="bg-red-600 p-8 lg:w-1/3 flex flex-col items-center justify-center">
-              <img
-                src="https://res.cloudinary.com/djbeg0zrq/image/upload/v1723169724/logos/fyuranu83qla1d6hlv5z.png"
-                width="216"
-                height="217"
-                alt="Logo"
-                className="object-cover"
-                loading="eager"
-                style={{ filter: "invert(1)" }}
-              />
               <h1 className="text-white text-4xl font-bold my-4">Chrisevel</h1>
               <p className="text-red-200 text-lg text-center">
                 Empresa dedicada a la venta y recarga de matafuegos y productos
