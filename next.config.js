@@ -7,7 +7,7 @@ module.exports = withImages({
   },
   output: "standalone",
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "images.unsplash.com"],
     disableStaticImages: false,
     unoptimized: false,
   },
