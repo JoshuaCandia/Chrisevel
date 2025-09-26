@@ -1,8 +1,10 @@
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
 import { Lato, Montserrat, Open_Sans, Roboto } from "next/font/google";
+import { useState, useEffect } from "react";
 import ButtonGoTop from "../components/ButtonGoTop";
 import Navbar from "../components/navbar";
+import PageLoader from "../components/PageLoader";
 import "../css/tailwind.css";
 
 const roboto = Roboto({
@@ -30,6 +32,17 @@ export function Providers({ children }) {
 }
 
 function MyApp({ Component, pageProps }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simular tiempo de carga
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Providers>
       <ThemeProvider defaultTheme="light" attribute="class">
@@ -38,11 +51,16 @@ function MyApp({ Component, pageProps }) {
             font-family: ${roboto.style.fontFamily};
           }
         `}</style>
-        <Navbar />
-        <main className="pt-20 ">
-          <Component {...pageProps} />
-        </main>
-        <ButtonGoTop />
+        <PageLoader isLoading={isLoading} />
+        {!isLoading && (
+          <>
+            <Navbar />
+            <main className="pt-20">
+              <Component {...pageProps} />
+            </main>
+            <ButtonGoTop />
+          </>
+        )}
       </ThemeProvider>
     </Providers>
   );

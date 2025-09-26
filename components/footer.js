@@ -1,6 +1,8 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import Container from "./container";
 
 export default function Footer() {
@@ -12,86 +14,148 @@ export default function Footer() {
   ];
 
   const legal = ["Términos", "Privacidad", "Legal"];
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <div className="relative">
+    <div className="relative bg-gray-50 dark:bg-gray-900">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <motion.div 
+          className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.div className="lg:col-span-2" variants={itemVariants}>
             <div>
-              {" "}
               <Link
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-gray-100"
               >
-                <img
-                  src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1731588627/nb9wu1pk2k19gabguvmy.png"
-                  alt="N"
-                  width="100"
-                  height="100"
-                  className="w-36"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src="https://res.cloudinary.com/dj4h7zbih/image/upload/v1731588627/nb9wu1pk2k19gabguvmy.png"
+                    alt="Chrisevel Logo"
+                    width={100}
+                    height={100}
+                    className="w-36"
+                  />
+                </motion.div>
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+            <motion.div 
+              className="max-w-md mt-4 text-gray-500 dark:text-gray-400"
+              variants={itemVariants}
+            >
               Chrisevel es una empresa dedicada a la venta y recarga de
               matafuegos y productos de seguridad. Nuestro objetivo es brindar
               un servicio de calidad a nuestros clientes.
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={itemVariants}>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <Link
+                <motion.div
                   key={index}
-                  href={item.link}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
                 >
-                  {item.name}
-                </Link>
+                  <Link
+                    href={item.link}
+                    className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-trueGray-700 transition-colors duration-200"
+                  >
+                    {item.name}
+                  </Link>
+                </motion.div>
               ))}
             </div>
-          </div>
-          <div>
+          </motion.div>
+          
+          <motion.div variants={itemVariants}>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
-                <Link
+                <motion.div
                   key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
                 >
-                  {item}
-                </Link>
+                  <Link
+                    href="/"
+                    className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-trueGray-700 transition-colors duration-200"
+                  >
+                    {item}
+                  </Link>
+                </motion.div>
               ))}
             </div>
-          </div>
-          <div className="">
-            <div>Seguinos en</div>
+          </motion.div>
+          
+          <motion.div className="" variants={itemVariants}>
+            <div className="font-medium text-gray-800 dark:text-gray-200">Seguinos en</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              {/*    <a href="/" target="_blank" rel="noopener">
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a href="/" target="_blank" rel="noopener">
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a> */}
-              <a href="/" target="_blank" rel="noopener">
+              <motion.a 
+                href="/" 
+                target="_blank" 
+                rel="noopener"
+                whileHover={{ scale: 1.2, color: "#ef4444" }}
+                transition={{ duration: 0.2 }}
+              >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
-              </a>
-              <a href="/" target="_blank" rel="noopener">
+              </motion.a>
+              <motion.a 
+                href="/" 
+                target="_blank" 
+                rel="noopener"
+                whileHover={{ scale: 1.2, color: "#ef4444" }}
+                transition={{ duration: 0.2 }}
+              >
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
-              </a>
+              </motion.a>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
+        <motion.div 
+          className="my-10 text-sm text-center text-gray-600 dark:text-gray-400"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+        >
           Copyright © Chrisevel {new Date().getFullYear()}.
-        </div>
+        </motion.div>
       </Container>
     </div>
   );

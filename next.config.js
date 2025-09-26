@@ -1,15 +1,14 @@
-module.exports = {
+const withImages = require("next-images");
+
+module.exports = withImages({
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
   },
   output: "standalone",
   images: {
-    domains: ["https://res.cloudinary.com"],
-    disableStaticImages: true,
-    unoptimized: true,
+    domains: ["res.cloudinary.com"],
+    disableStaticImages: false,
+    unoptimized: false,
   },
-};
-
-const withImages = require("next-images");
-module.exports = withImages();
+});
