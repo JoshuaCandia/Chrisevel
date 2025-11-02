@@ -154,7 +154,21 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          Copyright © Chrisevel {new Date().getFullYear()}.
+          <div>
+            Copyright © Chrisevel {new Date().getFullYear()}.
+          </div>
+          <div className="mt-2">
+            <motion.a
+              href="https://www.wonkai.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors duration-200"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              Powered by Wonkai
+            </motion.a>
+          </div>
         </motion.div>
       </Container>
     </div>
